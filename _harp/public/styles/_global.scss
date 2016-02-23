@@ -3,7 +3,14 @@
 
 body {
   background-color: $background-color;
-  font-family: $default-font;
+}
+
+body, .ui.menu, .ui.button, .ui.header {
+  font-family: $default-font !important;
+}
+
+.ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {
+  font-family: $default-font !important;
 }
 
 .main-area {
@@ -16,15 +23,26 @@ body {
   color: $color-white;
   h2 {
     color: $color-white !important;
-    margin-top: 14px;
+    margin-top: 2px !important;
+    font-size: 2em !important;
+  }
+  p {
+    margin-bottom: 0;
+    color: $color-grey;
+    margin-left: 15px;
   }
   img {
     height: auto;
     &.laptop {
-      max-width: 80%;
+      max-width: 99%;
     }
     &.icons {
       width: 110px;
+    }
+  }
+  form {
+    button {
+      font-weight: 400 !important;
     }
   }
 }

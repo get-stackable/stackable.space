@@ -7,20 +7,20 @@
       text-decoration: underline;
       font-size: 0.97rem;
     }
-  }
-  .header {
-    font-size: 2.2em;
-    margin-left: -40px !important;
-    img {
-      width: 0.7em !important;
-      margin-right: 14px !important;
-      margin-top: 4px !important;
-    }
-    .sub.header {
-      font-size: 0.4em;
-      margin-left: 24px !important;
-      font-weight: 400;
-      margin-top: 6px;
+    &.header {
+      font-size: 2.2em;
+      margin-left: -40px !important;
+      img {
+        width: 0.7em !important;
+        margin-right: 14px !important;
+        margin-top: 4px !important;
+      }
+      .sub.header {
+        font-size: 0.4em;
+        margin-left: 24px !important;
+        font-weight: 400;
+        margin-top: 6px;
+      }
     }
   }
 }

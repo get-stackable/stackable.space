@@ -17,6 +17,6 @@ harp compile _harp ./
 
 ```
 git add .
-git commit -a -m "site update"
+git commit -m "site update"
 git push origin master
 ```

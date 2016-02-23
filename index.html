@@ -1,28 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>stackable</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- semantic-ui -->
+    <link rel="stylesheet" href="js/semantic/semantic.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Welcome to stackable!</h1>
+<div class="main-area">
+    <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+            <a class="header item">
+                <img class="logo" src="images/logo.png" />
+                stackable
+                <div class="sub header">
+                    API DRIVEN CONTENT
+                </div>
+            </a>
+            <a class="right item" style="color: #50b5e1 !important;" href="#">Request beta invite</a>
+        </div>
+    </div>
+    <div class="ui container">
+        <div class="ui two column middle aligned center aligned centered grid landing-container">
+            <div class="column" style="padding-left: 4em;">
+                <img class="icons" src="images/icons.png" />
+                <p>your content writers and developers can enjoy</p>
+                <h2 class="ui header">CONTENT ANYWHERE</h2>
+                <form class="ui form">
+                    <div class="field">
+                        <div class="two fields">
+                            <div class="field">
+                                <input type="text" placeholder="your email address">
+                            </div>
+                            <div class="field">
+                                <button class="ui orange button">
+                                    request access
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="column" style="text-align: center;">
+                <img class="laptop" src="images/landing-laptop.png" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ui vertical footer segment">
+    <div class="ui container">
+        <div class="ui two column middle aligned center aligned centered grid">
+            <div class="column">
+                <p class="tag-line">
+                    <a style="font-weight: 700;" href="#">hi@appfuel.co.uk</a> -  make things happen
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  </body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/semantic/semantic.min.js"></script>
+</body>
 </html>

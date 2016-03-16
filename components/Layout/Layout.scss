@@ -1,37 +1,23 @@
-/**
- * React Static Boilerplate
- * https://github.com/koistya/react-static-boilerplate
- * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
- */
-
 @import '../variables.scss';
 
 html, body {
-  margin: 0;
-  padding: 0;
   background-color: $body-bg;
   color: $text-color;
   font-family: $font-family-base;
 }
 
-.Layout {
-  margin: 0 auto;
-}
-
-@media (min-width: $screen-sm-min) {
-  .Layout {
-    width: calc($screen-sm-min - 18px);
+.ui.container {
+  &.dark {
+    background-color: $dark-background;
   }
 }
 
-@media (min-width: $screen-md-min) {
-  .Layout {
-    width: calc($screen-md-min - 22px);
-  }
+.ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {
+  font-family: $font-family-base !important;
 }
 
-@media (min-width: $screen-lg-min) {
-  .Layout {
-    width: calc($screen-lg-min - 30px);
-  }
-}
+@media (min-width: $screen-sm-min) {}
+
+@media (min-width: $screen-md-min) {}
+
+@media (min-width: $screen-lg-min) {}

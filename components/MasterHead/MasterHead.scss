@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.masterhead {
+  padding-top: 8em;
+  .ui.header {
+    > .sub.header {
+      display: initial;
+      margin-left: 3em;
+    }
+  }
+}

@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: 'React Static Boilerplate',
-  description: 'Static website generator for React.js web applications.',
-  googleAnalyticsId: 'UA-XXXXX-X',
+  title: 'Stackable',
+  description: 'Stackable home page.',
+  googleAnalyticsId: 'UA-1390187-35'
 };

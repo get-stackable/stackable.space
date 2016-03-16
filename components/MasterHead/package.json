@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "name": "MasterHead",
+  "main": "./MasterHead.js"
+}

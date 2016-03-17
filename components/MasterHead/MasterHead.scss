@@ -2,10 +2,36 @@
 
 .masterhead {
   padding-top: 8em;
+  background-image: url(../../static/bg-box.png);
+  background-repeat: no-repeat;
+  background-position: center;
   .ui.header {
     > .sub.header {
       display: initial;
-      margin-left: 3em;
+      margin-left: 2em;
+      font-style: italic;
+      color: $color-white;
     }
+  }
+  .try.free {
+    margin: 1.5em 0;
+    .button {
+      border-radius: 0;
+      padding: .78571429em 2.5em;
+    }
+    p {
+      color: $color-white;
+      font-weight: $font-weight-lite;
+      font-size: 0.9em;
+      span.underline {
+        font-weight: $font-weight-bold;
+        text-decoration: underline;
+      }
+    }
+  }
+  img.banner {
+    margin-bottom: -5px;
+    max-width: 100%;
+    height: auto;
   }
 }

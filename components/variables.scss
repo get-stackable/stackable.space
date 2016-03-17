@@ -4,14 +4,22 @@
 $color-black-rock: #030828;
 $color-blue-charcoal: #010418;
 $color-white: #FFFFFF;
+$color-black: #000000;
 $color-biscay: #202B6C;
+$color-sandy-brown: #F0A852;
+$color-athens-gray: #EBEDF1;
+$color-dove-gray: #6D6C6C;
+$color-concrete: #F2F2F2;
+$color-pickled-bluewood: #2C3E50;
+$color-picton-blue: #51B5E0;
 
 /*
  * Scaffolding
  * -------------------------------------------------------------------------- */
 
 $body-bg: $color-white;
-$text-color: #333;
+$text-color: #030828;
+$text-color-lite: $color-dove-gray;
 $brand-color: #21ce99;
 $dark-background: $color-black-rock;
 $font-weight-lite: 300;

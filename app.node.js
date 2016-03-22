@@ -1166,6 +1166,11 @@ module.exports =
           ),
           _react2['default'].createElement(
             'a',
+            { className: 'item', href: 'http://blog.stackable.space' },
+            'Blog'
+          ),
+          _react2['default'].createElement(
+            'a',
             { className: 'ui inverted button', href: 'http://ui.stackable.space' },
             'Login'
           )

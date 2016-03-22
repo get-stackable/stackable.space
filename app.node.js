@@ -285,7 +285,22 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
+  var _underscore = __webpack_require__(38);
+
+  var _underscore2 = _interopRequireDefault(_underscore);
+
   __webpack_require__(23);
+
+  var consoleCode = [{
+    className: '.typed-console-nodejs',
+    strings: ["var stackable = require('stackable');<br />var stackable = new Stackable('MY-PUBLIC-KEY');<br />stackable.getAllItems(function (error, result) {<br />console.log(error, result);<br />});"]
+  }, {
+    className: '.typed-console-php',
+    strings: ["$stackable = new Stackable('MY-PUBLIC-KEY');<br />$result = $stackable->getAllItems();<br />print_r($result);"]
+  }, {
+    className: '.typed-console-curl',
+    strings: ["curl 'https://api.stackable.space/v1/items -d' 'token=BPGhLf9D9FEM'"]
+  }];
 
   var AboutApis = (function (_React$Component) {
     _inherits(AboutApis, _React$Component);
@@ -299,13 +314,20 @@ module.exports =
     _createClass(AboutApis, [{
       key: 'componentDidMount',
       value: function componentDidMount() {
-        $(".typed-console").typed({
-          strings: ["$conn =  new connection();", "var data = $conn->data();"],
-          typeSpeed: 0,
-          contentType: 'text',
-          loop: true,
-          loopCount: 10
-        });
+        $('.console .menu .item').tab();
+
+        setTimeout(function () {
+          _underscore2['default'].each(consoleCode, function (item) {
+            $(item.className).typed({
+              typeSpeed: 0,
+              backDelay: 4000,
+              contentType: 'html',
+              loop: true,
+              loopCount: 4,
+              strings: item.strings
+            });
+          });
+        }, 1500);
       }
     }, {
       key: 'render',
@@ -393,65 +415,91 @@ module.exports =
           ),
           _react2['default'].createElement(
             'div',
-            { className: 'ui container' },
+            { className: 'ui console fluid container' },
             _react2['default'].createElement(
               'div',
-              { className: 'ui two columns grid console' },
+              { className: 'ui container' },
               _react2['default'].createElement(
                 'div',
-                { className: 'column' },
-                _react2['default'].createElement(
-                  'h3',
-                  { className: 'ui header' },
-                  'Easy to use API for all content'
-                ),
-                _react2['default'].createElement(
-                  'p',
-                  null,
-                  'Content done! great now get ready to rock our API so you can use this on any web app , mobile device or project you can dream of.'
-                ),
-                _react2['default'].createElement(
-                  'p',
-                  null,
-                  'No more server headaches we got you covered.'
-                ),
+                { className: 'ui two columns grid' },
                 _react2['default'].createElement(
                   'div',
-                  { className: 'check github' },
+                  { className: 'column' },
                   _react2['default'].createElement(
-                    'a',
-                    { className: 'link', href: 'https://github.com/get-stackable' },
-                    'Checkout our Github',
-                    _react2['default'].createElement('i', { className: 'github icon' })
-                  )
-                )
-              ),
-              _react2['default'].createElement(
-                'div',
-                { className: 'column' },
-                _react2['default'].createElement(
-                  'div',
-                  { className: 'ui secondary menu' },
-                  _react2['default'].createElement(
-                    'a',
-                    { className: 'item', 'data-tab': 'curl' },
-                    'curl'
+                    'h3',
+                    { className: 'ui header' },
+                    'Easy to use API for all content'
                   ),
                   _react2['default'].createElement(
-                    'a',
-                    { className: 'item active', 'data-tab': 'nodejs' },
-                    'nodejs'
+                    'p',
+                    null,
+                    'Content done! great now get ready to rock our API so you can use this on any web app , mobile device or project you can dream of.'
                   ),
                   _react2['default'].createElement(
-                    'a',
-                    { className: 'item', 'data-tab': 'php' },
-                    'php'
+                    'p',
+                    null,
+                    'No more server headaches we got you covered.'
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'check github' },
+                    _react2['default'].createElement(
+                      'a',
+                      { className: 'link', href: 'https://github.com/get-stackable' },
+                      'Checkout our Github',
+                      _react2['default'].createElement('i', { className: 'github icon' })
+                    )
                   )
                 ),
                 _react2['default'].createElement(
                   'div',
-                  { className: 'typed-console-container' },
-                  _react2['default'].createElement('span', { className: 'typed-console' })
+                  { className: 'column' },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'ui secondary menu' },
+                    _react2['default'].createElement(
+                      'a',
+                      { className: 'item active', 'data-tab': 'nodejs' },
+                      'node'
+                    ),
+                    _react2['default'].createElement(
+                      'a',
+                      { className: 'item', 'data-tab': 'php' },
+                      'php'
+                    ),
+                    _react2['default'].createElement(
+                      'a',
+                      { className: 'item', 'data-tab': 'curl' },
+                      'curl'
+                    )
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'ui tab active', 'data-tab': 'nodejs' },
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'typed-console-container' },
+                      _react2['default'].createElement('span', { className: 'typed-console-nodejs' })
+                    )
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'ui tab', 'data-tab': 'php' },
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'typed-console-container' },
+                      _react2['default'].createElement('span', { className: 'typed-console-php' })
+                    )
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'ui tab', 'data-tab': 'curl' },
+                    _react2['default'].createElement(
+                      'div',
+                      { className: 'typed-console-container' },
+                      _react2['default'].createElement('span', { className: 'typed-console-curl' })
+                    )
+                  )
                 )
               )
             )
@@ -1638,7 +1686,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 0.96rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider i {\n  font-size: 3em;\n  color: #F2F2F2;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 0.9em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  margin-bottom: 3em;\n  margin-top: 4em;\n  padding: 2.5em 3em;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 5em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: 0;\n  padding: 0;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  background-color: #010418;\n  color: #FFFFFF;\n  padding: .31428571em .92857143em;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(33) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 0.96rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider i {\n  font-size: 3em;\n  color: #F2F2F2;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 0.9em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 5em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: 0;\n  padding: 0;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(33) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
 
   // exports
 
@@ -1652,7 +1700,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview {\n  color: #EBEDF1;\n}\n\n.container.preview .ui.header {}\n\n.container.preview .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1.6em;\n}\n\n.container.preview .ui.header.huge .sub.header {\n  font-size: 0.96rem;\n}\n\n.container.preview .left.column {\n  padding: 5em;\n}\n\n.container.preview .left.column .image {\n  padding-left: 5em;\n}\n\n.container.preview .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview {\n  color: #EBEDF1;\n}\n\n.container.preview .ui.header {}\n\n.container.preview .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1.6em;\n}\n\n.container.preview .ui.header.huge .sub.header {\n  font-size: 0.96rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview .left.column {\n  padding: 5em;\n}\n\n.container.preview .left.column .image {\n  padding-left: 5em;\n}\n\n.container.preview .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -1666,7 +1714,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview.two {\n  color: #030828;\n}\n\n.container.preview.two .ui.header {}\n\n.container.preview.two .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1.6em;\n}\n\n.container.preview.two .ui.header.huge .sub.header {\n  font-size: 0.96rem;\n}\n\n.container.preview.two .left.column {\n  padding: 5em;\n}\n\n.container.preview.two .left.column .image {\n  padding-left: 5em;\n}\n\n.container.preview.two .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview.two img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview.two {\n  color: #030828;\n}\n\n.container.preview.two .ui.header {}\n\n.container.preview.two .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1.6em;\n}\n\n.container.preview.two .ui.header.huge .sub.header {\n  font-size: 0.96rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview.two .left.column {\n  padding: 5em;\n}\n\n.container.preview.two .left.column .image {\n  padding-left: 5em;\n}\n\n.container.preview.two .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview.two img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -1680,7 +1728,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n", ""]);
 
   // exports
 
@@ -1694,7 +1742,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828;\n}\n\n@media (min-width: 768px) {}\n\n@media (min-width: 992px) {}\n\n@media (min-width: 1200px) {}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828;\n}\n\n@media (min-width: 768px) {}\n\n@media (min-width: 992px) {}\n\n@media (min-width: 1200px) {}\n", ""]);
 
   // exports
 
@@ -1708,7 +1756,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 3.6em;\n}\n\n.libraries .column > .ui.header {\n  color: #6D6C6C !important;\n}\n\n.libraries .column .icon > i.icon {\n  font-size: 4em;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 3.6em;\n}\n\n.libraries .column > .ui.header {\n  color: #6D6C6C !important;\n}\n\n.libraries .column .icon > i.icon {\n  font-size: 4em;\n}\n\n.libraries .column p {\n  font-family: \"adelle\",serif;\n}\n", ""]);
 
   // exports
 
@@ -1736,7 +1784,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.masterhead {\n  padding-top: 8em;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.masterhead .ui.header > .sub.header {\n  font-size: 0.9em;\n  font-style: italic;\n  color: #FFFFFF;\n}\n\n.masterhead .try.free {\n  margin: 1.5em 0;\n}\n\n.masterhead .try.free .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.masterhead .try.free p {\n  color: #FFFFFF;\n  font-weight: 300;\n  font-size: 0.9em;\n}\n\n.masterhead .try.free p span.underline {\n  font-weight: 500;\n  text-decoration: underline;\n}\n\n.masterhead img.banner {\n  margin-bottom: -5px;\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.masterhead {\n  padding-top: 8em;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.masterhead .ui.header > .sub.header {\n  font-size: 0.9em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #FFFFFF;\n}\n\n.masterhead .try.free {\n  margin: 1.5em 0;\n}\n\n.masterhead .try.free .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.masterhead .try.free p {\n  color: #FFFFFF;\n  font-weight: 300;\n  font-size: 0.9em;\n}\n\n.masterhead .try.free p span.underline {\n  font-weight: 500;\n  text-decoration: underline;\n}\n\n.masterhead img.banner {\n  margin-bottom: -5px;\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -1798,6 +1846,12 @@ module.exports =
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
+
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
+
+  module.exports = require("underscore");
 
 /***/ }
 /******/ ]);

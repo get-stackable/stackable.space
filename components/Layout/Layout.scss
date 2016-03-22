@@ -13,6 +13,7 @@ html, body {
 a.link {
   text-decoration: underline;
   color: $color-picton-blue;
+  font-family: $font-family-secondary !important;
 }
 
 .ui.container {

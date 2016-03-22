@@ -23,6 +23,9 @@ function Navigation() {
           <a className="item" href="http://docs.stackable.space">
             Documentation
           </a>
+          <a className="item" href="http://blog.stackable.space">
+            Blog
+          </a>
           <a className="ui inverted button" href="http://ui.stackable.space">
             Login
           </a>

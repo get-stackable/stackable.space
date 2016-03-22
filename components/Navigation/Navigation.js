@@ -17,13 +17,13 @@ function Navigation() {
           <strong>Pricing</strong>
         </a>
         <div className="right menu">
-          <a className="item">
+          <a className="item" href="http://slack.stackable.space">
             Help & Support
           </a>
-          <a className="item">
+          <a className="item" href="http://docs.stackable.space">
             Documentation
           </a>
-          <a className="ui inverted button">
+          <a className="ui inverted button" href="http://ui.stackable.space">
             Login
           </a>
         </div>

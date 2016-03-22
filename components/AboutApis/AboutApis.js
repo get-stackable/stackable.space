@@ -23,26 +23,33 @@ class AboutApis extends React.Component {
             </div>
           </div>
         </div>
-        <div className="ui divider"></div>
-        <div className="ui center aligned container">
-          <div className="ui three columns grid features">
-            <div className="column">
-              <div className="icon">
-                <img src="icon-container.png" />
+        <div className="ui fluid dark container">
+          <div className="ui center aligned container">
+            <div className="ui three column very relaxed grid features">
+              <div className="column">
+                <div className="icon">
+                  <img src="icon-container.png" />
+                </div>
+                <p>Create your containers with our magic creator</p>
               </div>
-              <p>Create your containers with our magic creator</p>
-            </div>
-            <div className="column">
-              <div className="icon">
-                <img src="icon-item.png" />
+              <div className="ui vertical divider">
+                <i className="long arrow right icon"></i>
               </div>
-              <p>Manage your container items with ease</p>
-            </div>
-            <div className="column">
-              <div className="icon">
-                <img src="icon-browser.png" />
+              <div className="column">
+                <div className="icon">
+                  <img src="icon-item.png" />
+                </div>
+                <p>Manage your container items with ease</p>
               </div>
-              <p>Share your new Dashboard</p>
+              <div className="ui vertical divider">
+                <i className="long arrow right icon"></i>
+              </div>
+              <div className="column">
+                <div className="icon">
+                  <img src="icon-browser.png" />
+                </div>
+                <p>Share your new Dashboard</p>
+              </div>
             </div>
           </div>
         </div>
@@ -53,14 +60,21 @@ class AboutApis extends React.Component {
               <p>Content done! great now get ready to rock our API so you can use this on any web app , mobile device or project you can dream of.</p>
               <p>No more server headaches we got you covered.</p>
               <div className="check github">
-                <a className="link">
+                <a className="link" href="https://github.com/get-stackable">
                   Checkout our Github
                   <i className="github icon"></i>
                 </a>
               </div>
             </div>
-            <div className="column typed-console-container">
-              <span className="typed-console"></span>
+            <div className="column">
+              <div className="ui secondary menu">
+                <a className="item" data-tab="curl">curl</a>
+                <a className="item active" data-tab="nodejs">nodejs</a>
+                <a className="item" data-tab="php">php</a>
+              </div>
+              <div className="typed-console-container">
+                <span className="typed-console"></span>
+              </div>
             </div>
           </div>
         </div>

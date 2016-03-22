@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import MasterHead from '../components/MasterHead';
 import AboutApis from '../components/AboutApis';
-import ContainersPreview from '../components/ContainersPreview';
+import FeatureOne from '../components/FeatureOne';
+import FeatureTwo from '../components/FeatureTwo';
+import Footer from '../components/Footer';
+import Libraries from '../components/Libraries';
 
 export default class extends Component {
 
@@ -10,7 +13,10 @@ export default class extends Component {
       <div>
         <MasterHead />
         <AboutApis />
-        <ContainersPreview />
+        <FeatureOne />
+        <FeatureTwo />
+        <Libraries />
+        <Footer />
       </div>
     );
   }

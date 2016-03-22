@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.libraries {
+  background-color: $color-concrete;
+  background-image: url(../../static/bg-box.png);
+  background-repeat: no-repeat;
+  background-position: center 220px;
+  background-size: 27%;
+  padding: 4em 0;
+  border-top: 2px solid $color-black-rock;
+  color: $color-dove-gray;
+  .ui.main.header {
+    margin-bottom: 3.6em;
+  }
+  .column {
+    > .ui.header {
+      color: $color-dove-gray !important;
+    }
+    .icon {
+      > i.icon {
+        font-size: 4em;
+      }
+    }
+  }
+}

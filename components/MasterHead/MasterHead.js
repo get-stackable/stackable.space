@@ -6,13 +6,13 @@ function MasterHead() {
     <div className="ui dark fluid container">
       <div className="ui center aligned container masterhead">
         <div className="ui large inverted header">
-          API BASED CMS
+          Create Content in <span className="underline">Minutes</span>
           <div className="sub header">
-            your content anywhere
+            enjoy an instant API & Dashboard
           </div>
         </div>
         <div className="try free">
-          <button className="ui yellow button">TRY FREE</button>
+          <a className="ui yellow button" href="http://ui.stackable.space">TRY FREE</a>
           <p>developer plan always <span className="underline">free</span></p>
         </div>
         <img className="banner" src="master-head-banner.jpg"/>

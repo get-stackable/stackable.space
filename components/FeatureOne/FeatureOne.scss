@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.container.preview {
+  color: $color-athens-gray;
+  .ui.header {
+    &.huge {
+      margin-top: 0.4em;
+      margin-bottom: 1.6em;
+      .sub.header {
+        font-size: 0.96rem;
+      }
+    }
+  }
+  .left.column {
+    .image {
+      padding-left: 5em;
+    }
+    padding: 5em;
+  }
+  .right.column {
+    padding: 5em;
+    text-align: center;
+  }
+  img.container.preview {
+    max-width: 100%;
+    height: auto;
+  }
+}

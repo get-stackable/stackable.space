@@ -6,6 +6,10 @@ html, body {
   font-family: $font-family-base !important;;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 a.link {
   text-decoration: underline;
   color: $color-picton-blue;

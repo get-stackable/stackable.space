@@ -11,17 +11,38 @@
   }
   .features {
     margin: 2em 0;
-    .icon {
-      border: 1px solid $color-athens-gray;
-      display: -webkit-inline-box;
-      border-radius: 40px;
-      padding: 1.2em;
-      height: 72px;
+    padding: 3.5em 0;
+    position: relative;
+    .ui.vertical.divider {
+      i {
+        font-size: 3em;
+        color: $color-concrete;
+      }
+      &:before {
+        border: 0;
+      }
+      &:after {
+        border: 0;
+      }
     }
-    p {
-      color: $text-color-lite;
-      font-size: 0.9em;
-      margin-top: 10px;
+    .column {
+      .icon {
+        height: 72px;
+      }
+      p {
+        font-size: 0.9em;
+        margin-top: 10px;
+        color: $color-concrete;
+      }
+      &:nth-child(1) {
+        //color: $brand-color;
+      }
+      &:nth-child(2) {
+        //color: $brand-color-two;
+      }
+      &:nth-child(3) {
+        //color: $brand-color-three;
+      }
     }
   }
   .console {
@@ -42,6 +63,15 @@
         text-decoration: none;
         color: $color-black;
         font-size: 2.5em;
+      }
+    }
+    .ui.secondary.menu {
+      margin: 0;
+      padding: 0;
+      .item {
+        background-color: $color-blue-charcoal;
+        color: $color-white;
+        padding: .31428571em .92857143em;
       }
     }
     .typed-console-container {

@@ -12,6 +12,9 @@ $color-dove-gray: #6D6C6C;
 $color-concrete: #F2F2F2;
 $color-pickled-bluewood: #2C3E50;
 $color-picton-blue: #51B5E0;
+$color-faded-jade: #468181;
+$color-picton-blue: #50b5e1;
+$color-carnation: #f05852;
 
 /*
  * Scaffolding
@@ -20,7 +23,9 @@ $color-picton-blue: #51B5E0;
 $body-bg: $color-white;
 $text-color: #030828;
 $text-color-lite: $color-dove-gray;
-$brand-color: #21ce99;
+$brand-color: $color-faded-jade;
+$brand-color-two: $color-picton-blue;
+$brand-color-three: $color-carnation;
 $dark-background: $color-black-rock;
 $font-weight-lite: 300;
 $font-weight-normal: 400;

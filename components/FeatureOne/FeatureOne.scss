@@ -5,18 +5,18 @@
   .ui.header {
     &.huge {
       margin-top: 0.4em;
-      margin-bottom: 1.6em;
+      margin-bottom: 1em;
       .sub.header {
-        font-size: 0.96rem;
+        font-size: 1.2rem;
         font-family: $font-family-secondary;
       }
     }
   }
   .left.column {
     .image {
-      padding-left: 5em;
+      padding-left: 13em;
     }
-    padding: 5em;
+    padding: 5em 0;
   }
   .right.column {
     padding: 5em;

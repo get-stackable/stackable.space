@@ -10,15 +10,24 @@
   border-top: 2px solid $color-black-rock;
   color: $color-dove-gray;
   .ui.main.header {
-    margin-bottom: 3.6em;
+    margin-bottom: 2em;
   }
   .column {
     > .ui.header {
-      color: $color-dove-gray !important;
+      color: rgba(0,0,0,0.7) !important;
     }
     .icon {
+      width: 100px;
+      height: 100px;
+      background: white;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      line-height: 1.8em;
+      margin: 0 auto 20px auto;
       > i.icon {
         font-size: 4em;
+        margin: 0;
       }
     }
     p {

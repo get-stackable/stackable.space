@@ -34,6 +34,28 @@ a.link {
 
 .ui.header {
   color: $text-color;
+  &.huge {
+    font-size: 3em;
+  }
+  &.large {
+    font-size: 2.34em;
+  }
+  &.medium {
+    font-size: 1.75em;
+  }
+}
+
+h3.ui.header {
+  font-size: 1.9rem;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+.ui.list {
+  font-size: 1.2em;
 }
 
 @media (min-width: $screen-sm-min) {}

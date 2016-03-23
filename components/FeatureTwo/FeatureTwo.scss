@@ -3,20 +3,30 @@
 .container.preview.two {
   color: $text-color;
   .ui.header {
+    color: $brand-color-two;
     &.huge {
       margin-top: 0.4em;
-      margin-bottom: 1.6em;
+      margin-bottom: 1em;
       .sub.header {
-        font-size: 0.96rem;
+        font-size: 1.2rem;
         font-family: $font-family-secondary;
       }
     }
   }
   .left.column {
     .image {
-      padding-left: 5em;
+      padding-left: 11em;
     }
     padding: 5em;
+    .ui.list {
+      .item {
+        color: rgba(0,0,0,.6);
+      }
+    }
+    .button {
+      border-radius: 0;
+      padding: .78571429em 2.5em;
+    }
   }
   .right.column {
     padding: 5em;

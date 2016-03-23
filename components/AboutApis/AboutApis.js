@@ -4,7 +4,7 @@ import './AboutApis.scss';
 
 let consoleCode = [{
   className: '.typed-console-nodejs',
-  strings: ["var stackable = require('stackable');<br />var stackable = new Stackable('MY-PUBLIC-KEY');<br />stackable.getAllItems(function (error, result) {<br />console.log(error, result);<br />});"]
+  strings: ["var stackable = require('stackable');<br />var stackable = new Stackable('MY-PUBLIC-KEY');<br />stackable.getAllItems(function (error, result) {<br />&nbsp;&nbsp;console.log(error, result);<br />});"]
 }, {
   className: '.typed-console-php',
   strings: ["$stackable = new Stackable('MY-PUBLIC-KEY');<br />$result = $stackable->getAllItems();<br />print_r($result);"]

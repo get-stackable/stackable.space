@@ -341,17 +341,17 @@ module.exports =
             _react2['default'].createElement(
               'div',
               { className: 'ui large header' },
-              'Save time. Be happy. Focus on what really matters',
+              'Stackable delivers your content to any channel',
               _react2['default'].createElement(
                 'div',
                 { className: 'sub header' },
-                'who needs a big old cms with tons of headache stackup your ultra fast api and dashboard'
+                'power your next generataion web or mobile app'
               )
             )
           ),
           _react2['default'].createElement(
             'div',
-            { className: 'ui fluid dark container' },
+            { className: 'ui fluid dark container', id: 'how-it-works' },
             _react2['default'].createElement(
               'div',
               { className: 'ui center aligned container' },
@@ -364,7 +364,7 @@ module.exports =
                   _react2['default'].createElement(
                     'div',
                     { className: 'icon' },
-                    _react2['default'].createElement('img', { src: 'icon-container.png' })
+                    _react2['default'].createElement('img', { src: 'greenbx.png' })
                   ),
                   _react2['default'].createElement(
                     'p',
@@ -375,7 +375,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   { className: 'ui vertical divider' },
-                  _react2['default'].createElement('i', { className: 'long arrow right icon' })
+                  _react2['default'].createElement('img', { src: 'arrowblue.png' })
                 ),
                 _react2['default'].createElement(
                   'div',
@@ -383,7 +383,7 @@ module.exports =
                   _react2['default'].createElement(
                     'div',
                     { className: 'icon' },
-                    _react2['default'].createElement('img', { src: 'icon-item.png' })
+                    _react2['default'].createElement('img', { src: 'itemblue.png' })
                   ),
                   _react2['default'].createElement(
                     'p',
@@ -394,7 +394,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   { className: 'ui vertical divider' },
-                  _react2['default'].createElement('i', { className: 'long arrow right icon' })
+                  _react2['default'].createElement('img', { src: 'arrowred.png' })
                 ),
                 _react2['default'].createElement(
                   'div',
@@ -402,12 +402,12 @@ module.exports =
                   _react2['default'].createElement(
                     'div',
                     { className: 'icon' },
-                    _react2['default'].createElement('img', { src: 'icon-browser.png' })
+                    _react2['default'].createElement('img', { src: 'docred.png' })
                   ),
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'Share your new Dashboard'
+                    'Deliver your data'
                   )
                 )
               )
@@ -438,7 +438,27 @@ module.exports =
                   _react2['default'].createElement(
                     'p',
                     null,
-                    'No more server headaches we got you covered.'
+                    _react2['default'].createElement(
+                      'strong',
+                      null,
+                      'No more server headaches we got you covered.'
+                    )
+                  ),
+                  _react2['default'].createElement(
+                    'p',
+                    null,
+                    'Stackble creates an indivitalised api around your data and sends over secure SSL.'
+                  ),
+                  _react2['default'].createElement(
+                    'p',
+                    null,
+                    'Head over on to our ',
+                    _react2['default'].createElement(
+                      'a',
+                      { href: 'https://docs.stackable.space' },
+                      'docs'
+                    ),
+                    ' to find out more about our api'
                   ),
                   _react2['default'].createElement(
                     'div',
@@ -548,7 +568,7 @@ module.exports =
             _react2['default'].createElement(
               'div',
               { className: 'image' },
-              _react2['default'].createElement('img', { src: 'icon-container.png' })
+              _react2['default'].createElement('img', { src: 'greenbx.png' })
             ),
             _react2['default'].createElement(
               'div',
@@ -651,7 +671,7 @@ module.exports =
           _react2['default'].createElement(
             'div',
             { className: 'image' },
-            _react2['default'].createElement('img', { src: 'icon-item.png' })
+            _react2['default'].createElement('img', { src: 'itemblue.png' })
           ),
           _react2['default'].createElement(
             'div',
@@ -726,19 +746,136 @@ module.exports =
         'div',
         { className: 'ui container' },
         _react2['default'].createElement(
-          'h4',
-          { className: 'ui inverted header' },
-          '© 2016 Stackable'
-        ),
-        _react2['default'].createElement(
-          'p',
-          null,
+          'div',
+          { className: 'ui stackable inverted divided equal height stackable grid' },
           _react2['default'].createElement(
-            'a',
-            { href: 'mailto:hi@appfuel.co.uk', className: 'link' },
-            'hi@appfuel.co.uk'
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              'Help & Support'
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui inverted link list' },
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://slack.stackable.space', className: 'item' },
+                'Slack'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://twitter.com/GetStackable', className: 'item' },
+                'Twitter'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://www.facebook.com/Stackablespace-1079849398701825/', className: 'item' },
+                'Facebook'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'mailto:hi@appfuel.co.uk', className: 'item' },
+                'Email'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://docs.stackable.space', className: 'item' },
+                'Documentation'
+              )
+            )
           ),
-          ' -  make things happen'
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              'Libraries'
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui inverted link list' },
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://github.com/get-stackable/stackable-javascript', className: 'item' },
+                'Javascript'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://github.com/get-stackable/stackable-javascript', className: 'item' },
+                'NodeJS'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://github.com/get-stackable/stackable-php', className: 'item' },
+                'PHP'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'iOS / Swift'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'Android'
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              'Updates'
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui inverted link list' },
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://blog.stackable.space', className: 'item' },
+                'Blog'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'Newsletter'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'About'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'Careers'
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              '© 2016 Stackable'
+            ),
+            _react2['default'].createElement(
+              'p',
+              null,
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://www.appfuel.co.uk', className: 'link' },
+                'appfuel.co.uk'
+              ),
+              ' -  boutique javascript agency'
+            )
+          )
         )
       )
     );
@@ -832,25 +969,30 @@ module.exports =
 
       this.state = {
         libraries: [{
-          title: 'Native mobile app',
-          description: 'An app that runs natively in devices',
-          image: ''
+          title: 'Javascript',
+          description: 'Official Stackable library for JS + ReactJs and AngularJs',
+          image: 'icon-javascript',
+          url: 'https://github.com/get-stackable/stackable-javascript'
         }, {
-          title: 'Single page app',
-          description: 'A Javascript front-end app that uses an API',
-          image: ''
+          title: 'NodeJs',
+          description: 'Stackable NodeJs Boilerplate',
+          image: 'icon-nodejs',
+          url: 'https://github.com/get-stackable/stackable-javascript'
         }, {
-          title: 'Regular web app',
-          description: 'Traditional web app (with refresh)',
-          image: ''
+          title: 'PHP',
+          description: 'Official PHP library',
+          image: 'icon-php-alt',
+          url: 'https://github.com/get-stackable/stackable-php'
         }, {
-          title: 'Hybrid mobile app',
-          description: 'a JS/HTML5 mobile app that runs in devices',
-          image: ''
+          title: 'iOS / Swift',
+          description: 'iOS / Swift library coming soon!',
+          image: 'fa fa-apple',
+          url: '#'
         }, {
-          title: 'Bacdend/API',
-          description: 'An API or Service',
-          image: ''
+          title: 'Android',
+          description: 'Android library coming soon!',
+          image: 'fa fa-android',
+          url: '#'
         }]
       };
     }
@@ -884,18 +1026,18 @@ module.exports =
               this.state.libraries.map(function (library, index) {
                 return _react2['default'].createElement(
                   'div',
-                  { className: 'column', key: index },
+                  { className: 'column inner', key: index },
                   _react2['default'].createElement(
                     'div',
                     { className: 'icon' },
-                    _react2['default'].createElement('i', { className: 'github icon' })
+                    _react2['default'].createElement('i', { className: library.image })
                   ),
                   _react2['default'].createElement(
                     'div',
                     { className: 'content' },
                     _react2['default'].createElement(
-                      'div',
-                      { className: 'ui small header' },
+                      'a',
+                      { className: 'ui small header', href: library.url },
                       library.title
                     ),
                     _react2['default'].createElement(
@@ -1063,11 +1205,11 @@ module.exports =
         _react2['default'].createElement(
           'div',
           { className: 'ui large inverted header' },
-          'Create Content in ',
+          'Create Dynamic Content in ',
           _react2['default'].createElement(
             'span',
             { className: 'underline' },
-            'Minutes'
+            'Seconds'
           ),
           _react2['default'].createElement(
             'div',
@@ -1133,13 +1275,13 @@ module.exports =
         { className: 'ui large secondary inverted pointing menu' },
         _react2['default'].createElement(
           'a',
-          { className: 'header item' },
+          { className: 'header item', style: { 'fontWeight': '800' } },
           _react2['default'].createElement('img', { className: 'logo', src: 'logo.png' }),
           'stackable'
         ),
         _react2['default'].createElement(
           'a',
-          { className: 'item' },
+          { className: 'item', href: '#how-it-works' },
           'How it works'
         ),
         _react2['default'].createElement(
@@ -1691,7 +1833,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 1.25rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider i {\n  font-size: 3em;\n  color: #F2F2F2;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 1.1em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 5em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 5em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: -12px 0 -14px 0;\n  padding: 0 3.5em;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(33) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 1.25rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider {\n  margin-top: -52px;\n}\n\n.about.apis .features .ui.vertical.divider img {\n  width: 50px;\n  height: auto;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 1.1em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 5em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 3em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: -12px 0 -14px 0;\n  padding: 0 3.5em;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(33) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
 
   // exports
 
@@ -1733,7 +1875,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n\n.footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.column:not(.row), .footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.row>.column {\n  -webkit-box-shadow: -1px 0 0 0 #040B36;\n          box-shadow: -1px 0 0 0 #040B36\n}\n\n.footer h4 {\n  font-size: 1.24rem;\n}\n\n.footer .ui.list .item {\n  font-weight: 400;\n  font-size: 0.9em;\n}\n", ""]);
 
   // exports
 
@@ -1761,7 +1903,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 2em;\n}\n\n.libraries .column > .ui.header {\n  color: rgba(0,0,0,0.7) !important;\n}\n\n.libraries .column .icon {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 50px;\n  line-height: 1.8em;\n  margin: 0 auto 20px auto;\n}\n\n.libraries .column .icon > i.icon {\n  font-size: 4em;\n  margin: 0;\n}\n\n.libraries .column p {\n  font-family: \"adelle\",serif;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 2em;\n}\n\n.libraries .column.inner {}\n\n.libraries .column.inner:hover a {\n  text-decoration: underline !important;\n}\n\n.libraries .column.inner:hover .icon > i {\n  color: #f05852 !important;\n}\n\n.libraries .column > a.ui.header {\n  color: rgba(0,0,0,0.6) !important;\n}\n\n.libraries .column .icon {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 50px;\n  line-height: 1.8em;\n  margin: 0 auto 20px auto;\n}\n\n.libraries .column .icon > i {\n  font-size: 55px;\n  line-height: 110px;\n  padding-left: 15px\n}\n\n.libraries .column .icon > i.fa {\n  padding: 0 !important;\n  line-height: 100px !important;\n}\n\n.libraries .column p {\n  font-size: 0.99em !important;\n}\n", ""]);
 
   // exports
 

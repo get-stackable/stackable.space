@@ -12,7 +12,7 @@ function FeatureTwo() {
         </div>
         <div className="left column">
           <div className="image">
-            <img src="icon-item.png" />
+            <img src="itemblue.png" />
           </div>
           <div className="ui huge header">
             Dashboard Ready

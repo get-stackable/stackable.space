@@ -8,7 +8,7 @@ const trackingCode = { __html:
   `e.src='https://www.google-analytics.com/analytics.js';` +
   `r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));` +
   `ga('create','${googleAnalyticsId}','auto');` +
-  `try{Typekit.load({ async: true })}catch(e){}`,
+  `try{Typekit.load({ async: true })}catch(e){}`
 };
 
 function GoogleAnalytics() {

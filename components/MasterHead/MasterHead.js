@@ -6,7 +6,7 @@ function MasterHead() {
     <div className="ui dark fluid container">
       <div className="ui center aligned container masterhead">
         <div className="ui large inverted header">
-          Create Content in <span className="underline">Minutes</span>
+          Create Dynamic Content in <span className="underline">Seconds</span>
           <div className="sub header">
             enjoy an instant API & Dashboard
           </div>

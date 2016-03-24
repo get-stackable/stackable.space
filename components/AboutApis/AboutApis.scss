@@ -14,9 +14,10 @@
     padding: 3.5em 0;
     position: relative;
     .ui.vertical.divider {
-      i {
-        font-size: 3em;
-        color: $color-concrete;
+      margin-top: -52px;
+      img {
+        width: 50px;
+        height: auto;
       }
       &:before {
         border: 0;
@@ -60,7 +61,7 @@
       color: $color-pickled-bluewood;
     }
     .check.github {
-      margin-top: 5em;
+      margin-top: 3em;
       i {
         text-decoration: none;
         color: $color-black;

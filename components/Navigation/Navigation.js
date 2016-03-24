@@ -10,7 +10,7 @@ function Navigation() {
           <img className="logo" src="logo.png"/>
           stackable
         </a>
-        <a className="item">
+        <a className="item" href="#how-it-works">
           How it works
         </a>
         <a className="item">

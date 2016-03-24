@@ -8,7 +8,7 @@ function FeatureOne() {
         <div className="ui two column grid features">
           <div className="left column">
             <div className="image">
-              <img src="icon-container.png" />
+              <img src="greenbx.png" />
             </div>
             <div className="ui huge inverted header">
               Create powerful data

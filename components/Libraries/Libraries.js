@@ -8,25 +8,30 @@ class Libraries extends React.Component {
 
     this.state = {
       libraries: [{
-        title: 'Native mobile app',
-        description: 'An app that runs natively in devices',
-        image: ''
+        title: 'Javascript',
+        description: 'Official Stackable library for JS + ReactJs and AngularJs',
+        image: 'icon-javascript',
+        url: 'https://github.com/get-stackable/stackable-javascript'
       }, {
-        title: 'Single page app',
-        description: 'A Javascript front-end app that uses an API',
-        image: ''
+        title: 'NodeJs',
+        description: 'Stackable NodeJs Boilerplate',
+        image: 'icon-nodejs',
+        url: 'https://github.com/get-stackable/stackable-javascript'
       }, {
-        title: 'Regular web app',
-        description: 'Traditional web app (with refresh)',
-        image: ''
+        title: 'PHP',
+        description: 'Official PHP library',
+        image: 'icon-php-alt',
+        url: 'https://github.com/get-stackable/stackable-php'
       }, {
-        title: 'Hybrid mobile app',
-        description: 'a JS/HTML5 mobile app that runs in devices',
-        image: ''
+        title: 'iOS / Swift',
+        description: 'iOS / Swift library coming soon!',
+        image: 'fa fa-apple',
+        url: '#'
       }, {
-        title: 'Bacdend/API',
-        description: 'An API or Service',
-        image: ''
+        title: 'Android',
+        description: 'Android library coming soon!',
+        image: 'fa fa-android',
+        url: '#'
       }]
     };
   }
@@ -44,12 +49,12 @@ class Libraries extends React.Component {
           <div className="ui five column grid">
             {this.state.libraries.map((library, index) => {
               return (
-                <div className="column" key={index}>
+                <div className="column inner" key={index}>
                   <div className="icon">
-                    <i className="github icon"></i>
+                    <i className={library.image}></i>
                   </div>
                   <div className="content">
-                    <div className="ui small header">{library.title}</div>
+                    <a className="ui small header" href={library.url}>{library.title}</a>
                     <p>{library.description}</p>
                   </div>
                 </div>

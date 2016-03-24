@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <div className="ui container">
       <div className="ui large secondary inverted pointing menu">
-        <a className="header item">
+        <a className="header item" style={{'fontWeight': '800'}}>
           <img className="logo" src="logo.png"/>
           stackable
         </a>

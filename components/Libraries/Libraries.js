@@ -1,7 +1,6 @@
 import React from 'react';
 import './Libraries.scss';
 
-
 class Libraries extends React.Component {
   constructor(props) {
     super(props);

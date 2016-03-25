@@ -5,4 +5,16 @@
   background-color: $dark-background !important;
   text-align: center;
   font-family: $font-family-secondary;
+  .ui.inverted.divided.grid:not([class*="vertically divided"])>.column:not(.row), .ui.inverted.divided.grid:not([class*="vertically divided"])>.row>.column {
+    box-shadow: -1px 0 0 0 $color-deep-cove
+  }
+  h4 {
+    font-size: 1.24rem;
+  }
+  .ui.list {
+    .item {
+      font-weight: $font-weight-normal;
+      font-size: 0.9em;
+    }
+  }
 }

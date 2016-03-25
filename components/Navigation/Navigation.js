@@ -6,11 +6,11 @@ function Navigation() {
   return (
     <div className="ui container">
       <div className="ui large secondary inverted pointing menu">
-        <a className="header item">
+        <a className="header item" style={{'fontWeight': '800'}}>
           <img className="logo" src="logo.png"/>
           stackable
         </a>
-        <a className="item">
+        <a className="item" href="#how-it-works">
           How it works
         </a>
         <a className="item">

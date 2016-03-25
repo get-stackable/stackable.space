@@ -10,19 +10,45 @@
   border-top: 2px solid $color-black-rock;
   color: $color-dove-gray;
   .ui.main.header {
-    margin-bottom: 3.6em;
+    margin-bottom: 2em;
+  }
+  .column.inner {
+    &:hover {
+      a {
+        text-decoration: underline !important;
+      }
+      .icon {
+        > i {
+          color: $color-carnation !important;
+        }
+      }
+    }
   }
   .column {
-    > .ui.header {
-      color: $color-dove-gray !important;
+    > a.ui.header {
+      color: rgba(0,0,0,0.6) !important;
     }
     .icon {
-      > i.icon {
-        font-size: 4em;
+      width: 100px;
+      height: 100px;
+      background: white;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      line-height: 1.8em;
+      margin: 0 auto 20px auto;
+      > i {
+        font-size: 55px;
+        line-height: 110px;
+        padding-left: 15px;
+        &.fa {
+          padding: 0 !important;
+          line-height: 100px !important;
+        }
       }
     }
     p {
-      font-family: $font-family-secondary;
+      font-size: 0.99em !important;
     }
   }
 }

@@ -421,7 +421,7 @@ module.exports =
               { className: 'ui container' },
               _react2['default'].createElement(
                 'div',
-                { className: 'ui two columns grid' },
+                { className: 'ui stackable two columns grid' },
                 _react2['default'].createElement(
                   'div',
                   { className: 'column' },
@@ -561,7 +561,7 @@ module.exports =
         { className: 'ui container' },
         _react2['default'].createElement(
           'div',
-          { className: 'ui two column grid features' },
+          { className: 'ui stackable two column grid features' },
           _react2['default'].createElement(
             'div',
             { className: 'left column' },
@@ -653,7 +653,7 @@ module.exports =
       { className: 'ui container preview two' },
       _react2['default'].createElement(
         'div',
-        { className: 'ui two column grid features' },
+        { className: 'ui stackable two column grid features' },
         _react2['default'].createElement(
           'div',
           { className: 'right column' },
@@ -1022,7 +1022,7 @@ module.exports =
             ),
             _react2['default'].createElement(
               'div',
-              { className: 'ui five column grid' },
+              { className: 'ui doubling five column grid' },
               this.state.libraries.map(function (library, index) {
                 return _react2['default'].createElement(
                   'div',
@@ -1254,7 +1254,15 @@ module.exports =
     value: true
   });
 
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
   var _react = __webpack_require__(1);
 
@@ -1266,60 +1274,122 @@ module.exports =
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  function Navigation() {
-    return _react2['default'].createElement(
-      'div',
-      { className: 'ui container' },
-      _react2['default'].createElement(
-        'div',
-        { className: 'ui large secondary inverted pointing menu' },
-        _react2['default'].createElement(
-          'a',
-          { className: 'header item', style: { 'fontWeight': '800' } },
-          _react2['default'].createElement('img', { className: 'logo', src: 'logo.png' }),
-          'stackable'
-        ),
-        _react2['default'].createElement(
-          'a',
-          { className: 'item', href: '#how-it-works' },
-          'How it works'
-        ),
-        _react2['default'].createElement(
-          'a',
-          { className: 'item' },
-          _react2['default'].createElement(
-            'strong',
-            null,
-            'Pricing'
-          )
-        ),
-        _react2['default'].createElement(
+  var Navigation = (function (_React$Component) {
+    _inherits(Navigation, _React$Component);
+
+    function Navigation() {
+      _classCallCheck(this, Navigation);
+
+      _get(Object.getPrototypeOf(Navigation.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(Navigation, [{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        $('.ui.dropdown.mobile').dropdown();
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
           'div',
-          { className: 'right menu' },
+          { className: 'ui container' },
           _react2['default'].createElement(
-            'a',
-            { className: 'item', href: 'http://slack.stackable.space' },
-            'Help & Support'
-          ),
-          _react2['default'].createElement(
-            'a',
-            { className: 'item', href: 'http://docs.stackable.space' },
-            'Documentation'
-          ),
-          _react2['default'].createElement(
-            'a',
-            { className: 'item', href: 'http://blog.stackable.space' },
-            'Blog'
-          ),
-          _react2['default'].createElement(
-            'a',
-            { className: 'ui inverted button', href: 'http://ui.stackable.space' },
-            'Login'
+            'div',
+            { className: 'ui large secondary inverted pointing menu' },
+            _react2['default'].createElement(
+              'a',
+              { className: 'header item', style: { 'fontWeight': '800' } },
+              _react2['default'].createElement('img', { className: 'logo', src: 'logo.png' }),
+              'stackable'
+            ),
+            _react2['default'].createElement(
+              'a',
+              { className: 'item desktop', href: '#how-it-works' },
+              'How it works'
+            ),
+            _react2['default'].createElement(
+              'a',
+              { className: 'item desktop' },
+              _react2['default'].createElement(
+                'strong',
+                null,
+                'Pricing'
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'right menu desktop' },
+              _react2['default'].createElement(
+                'a',
+                { className: 'item', href: 'http://slack.stackable.space' },
+                'Help & Support'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { className: 'item', href: 'http://docs.stackable.space' },
+                'Documentation'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { className: 'item', href: 'http://blog.stackable.space' },
+                'Blog'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { className: 'ui inverted button', href: 'http://ui.stackable.space' },
+                'Login'
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui right inverted button dropdown item mobile' },
+              'Menu',
+              _react2['default'].createElement(
+                'div',
+                { className: 'menu' },
+                _react2['default'].createElement(
+                  'a',
+                  { className: 'item', href: '#how-it-works' },
+                  'How it works'
+                ),
+                _react2['default'].createElement(
+                  'a',
+                  { className: 'item' },
+                  _react2['default'].createElement(
+                    'strong',
+                    null,
+                    'Pricing'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'a',
+                  { className: 'item', href: 'http://docs.stackable.space' },
+                  'Documentation'
+                ),
+                _react2['default'].createElement(
+                  'a',
+                  { className: 'item', href: 'http://blog.stackable.space' },
+                  'Blog'
+                ),
+                _react2['default'].createElement(
+                  'a',
+                  { className: 'item', href: 'http://ui.stackable.space' },
+                  _react2['default'].createElement(
+                    'strong',
+                    null,
+                    'Login'
+                  )
+                )
+              )
+            )
           )
-        )
-      )
-    );
-  }
+        );
+      }
+    }]);
+
+    return Navigation;
+  })(_react2['default'].Component);
 
   exports['default'] = Navigation;
   module.exports = exports['default'];
@@ -1343,7 +1413,15 @@ module.exports =
   __webpack_require__(32);
 
   function TopBar() {
-    return _react2['default'].createElement('div', { className: 'top bar' });
+    return _react2['default'].createElement(
+      'div',
+      { className: 'top bar' },
+      _react2['default'].createElement(
+        'p',
+        null,
+        'Stackable is still in early development do sign up and leave some feedback.'
+      )
+    );
   }
 
   exports['default'] = TopBar;
@@ -1889,7 +1967,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828\n}\n\n.ui.header.huge {\n  font-size: 3em;;\n}\n\n.ui.header.large {\n  font-size: 2.34em;;\n}\n\n.ui.header.medium {\n  font-size: 1.75em;;\n}\n\nh3.ui.header {\n  font-size: 1.9rem;\n}\n\np {\n  font-size: 1.1em;\n  line-height: 1.3em;\n}\n\n.ui.list {\n  font-size: 1.2em;\n}\n\n@media (min-width: 768px) {}\n\n@media (min-width: 992px) {}\n\n@media (min-width: 1200px) {}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828\n}\n\n.ui.header.huge {\n  font-size: 3em;;\n}\n\n.ui.header.large {\n  font-size: 2.34em;;\n}\n\n.ui.header.medium {\n  font-size: 1.75em;;\n}\n\nh3.ui.header {\n  font-size: 1.9rem;\n}\n\np {\n  font-size: 1.1em;\n  line-height: 1.3em;\n}\n\n.ui.list {\n  font-size: 1.2em;\n}\n\n@media only screen and (max-width: 768px) {\n  .ui.fluid.container {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n  .ui.secondary.menu {\n    padding: 10px 0 !important;\n  }\n  .masterhead {\n    padding-top: 1em !important;\n  }\n  .about.apis .console {\n    padding: 1em !important;;\n  }\n  .about.apis .ui.grid > .column {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;;\n  }\n  .container.preview.two {\n    padding: 2em 0;\n  }\n}\n\n@media only screen and (max-width: 992px) {\n  .ui.secondary.menu .desktop {\n    display: none !important;;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .ui.secondary.menu .mobile {\n    display: none !important;;\n  }\n}\n\n@media (min-width: 1200px) {}\n", ""]);
 
   // exports
 
@@ -1959,7 +2037,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.top.bar {\n  background-color: #010418;\n  height: 40px;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.top.bar {\n  background-color: #010418;\n  height: 40px;\n  color: #C0C5D8;\n  text-align: center;\n  padding-top: 10px;\n}\n", ""]);
 
   // exports
 

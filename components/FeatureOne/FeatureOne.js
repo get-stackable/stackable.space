@@ -5,7 +5,7 @@ function FeatureOne() {
   return (
     <div className="ui dark fluid container preview">
       <div className="ui container">
-        <div className="ui two column grid features">
+        <div className="ui stackable two column grid features">
           <div className="left column">
             <div className="image">
               <img src="icon-container.png" />

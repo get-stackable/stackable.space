@@ -4,7 +4,7 @@ import './FeatureTwo.scss';
 function FeatureTwo() {
   return (
     <div className="ui container preview two">
-      <div className="ui two column grid features">
+      <div className="ui stackable two column grid features">
         <div className="right column">
           <img className="container preview" src="items-preview.png" />
           <br />

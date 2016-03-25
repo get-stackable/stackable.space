@@ -41,7 +41,7 @@ class Libraries extends React.Component {
               <a className="link">we created some libraries check them out</a>
             </div>
           </div>
-          <div className="ui five column grid">
+          <div className="ui doubling five column grid">
             {this.state.libraries.map((library, index) => {
               return (
                 <div className="column" key={index}>

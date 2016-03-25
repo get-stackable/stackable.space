@@ -36,6 +36,33 @@ a.link {
   color: $text-color;
 }
 
+@media only screen and (max-width: $screen-sm-min) {
+  .ui.fluid.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .ui.secondary.menu {
+    padding: 10px 0 !important;
+  }
+  .masterhead {
+    padding-top: 1em !important;
+  }
+  .about.apis {
+    .console {
+      padding: 1em !important;
+    }
+    .ui.grid {
+      > .column {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+  .container.preview.two {
+    padding: 2em 0;
+  }
+}
+
 @media (min-width: $screen-sm-min) {}
 
 @media (min-width: $screen-md-min) {}

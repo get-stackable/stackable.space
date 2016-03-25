@@ -74,7 +74,7 @@ class AboutApis extends React.Component {
         </div>
         <div className="ui console fluid container">
           <div className="ui container">
-            <div className="ui two columns grid">
+            <div className="ui stackable two columns grid">
               <div className="column">
                 <h3 className="ui header">Easy to use API for all content</h3>
                 <p>Content done! great now get ready to rock our API so you can use this on any web app , mobile device or project you can dream of.</p>

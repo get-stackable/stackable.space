@@ -45,12 +45,6 @@ module.exports =
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -65,35 +59,39 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(37);
+  var _reactDom = __webpack_require__(43);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(5);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(7);
 
-  var _coreLocation = __webpack_require__(4);
+  var _coreLocation = __webpack_require__(6);
 
   var _coreLocation2 = _interopRequireDefault(_coreLocation);
 
-  var _componentsLayout = __webpack_require__(10);
+  var _componentsLayout = __webpack_require__(11);
 
   var _componentsLayout2 = _interopRequireDefault(_componentsLayout);
 
   var routes = {
     '/404': function _() {
-      return __webpack_require__(16);
-    }, '/500': function _() {
-      return __webpack_require__(17);
-    }, '/about': function about() {
       return __webpack_require__(18);
-    }, '/blog': function blog() {
+    }, '/500': function _() {
       return __webpack_require__(19);
-    }, '/blog/test-article-one': function blogTestArticleOne() {
+    }, '/about': function about() {
       return __webpack_require__(20);
-    }, '/blog/test-article-two': function blogTestArticleTwo() {
+    }, '/blog': function blog() {
       return __webpack_require__(21);
-    }, '/': function _() {
+    }, '/blog/test-article-one': function blogTestArticleOne() {
       return __webpack_require__(22);
+    }, '/blog/test-article-two': function blogTestArticleTwo() {
+      return __webpack_require__(23);
+    }, '/careers': function careers() {
+      return __webpack_require__(24);
+    }, '/': function _() {
+      return __webpack_require__(25);
+    }, '/pricing': function pricing() {
+      return __webpack_require__(26);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -222,12 +220,6 @@ module.exports =
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-  module.exports = __webpack_require__.p + "412d1dff3a7139f42e9fc8fea322fa24.png";
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
   'use strict';
 
   Object.defineProperty(exports, '__esModule', {
@@ -236,33 +228,160 @@ module.exports =
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(5);
+  var _react = __webpack_require__(1);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(34);
+  var _react2 = _interopRequireDefault(_react);
 
-  var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
+  __webpack_require__(30);
 
-  var _historyLibCreateMemoryHistory = __webpack_require__(35);
+  function Footer() {
+    return _react2['default'].createElement(
+      'div',
+      { className: 'ui inverted vertical footer segment' },
+      _react2['default'].createElement(
+        'div',
+        { className: 'ui container' },
+        _react2['default'].createElement(
+          'div',
+          { className: 'ui stackable inverted divided equal height stackable grid' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              'Help & Support'
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui inverted link list' },
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://slack.stackable.space', className: 'item' },
+                'Slack'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://twitter.com/GetStackable', className: 'item' },
+                'Twitter'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://www.facebook.com/Stackablespace-1079849398701825/', className: 'item' },
+                'Facebook'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'mailto:hi@appfuel.co.uk', className: 'item' },
+                'Email'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://docs.stackable.space', className: 'item' },
+                'Documentation'
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              'Libraries'
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui inverted link list' },
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://github.com/get-stackable/stackable-javascript', className: 'item' },
+                'Javascript'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://github.com/get-stackable/stackable-javascript', className: 'item' },
+                'NodeJS'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: 'https://github.com/get-stackable/stackable-php', className: 'item' },
+                'PHP'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'iOS / Swift'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'Android'
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              'Updates'
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui inverted link list' },
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://blog.stackable.space', className: 'item' },
+                'Blog'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '#', className: 'item' },
+                'Newsletter'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '/about', className: 'item' },
+                'About'
+              ),
+              _react2['default'].createElement(
+                'a',
+                { href: '/careers', className: 'item' },
+                'Careers'
+              )
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'four wide column' },
+            _react2['default'].createElement(
+              'h4',
+              { className: 'ui inverted header' },
+              '© 2016 Stackable'
+            ),
+            _react2['default'].createElement(
+              'p',
+              null,
+              _react2['default'].createElement(
+                'a',
+                { href: 'http://www.appfuel.co.uk', className: 'link' },
+                'appfuel.co.uk'
+              ),
+              ' -  boutique javascript agency'
+            )
+          )
+        )
+      )
+    );
+  }
 
-  var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
-
-  var _historyLibUseQueries = __webpack_require__(36);
-
-  var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
-
-  var location = (0, _historyLibUseQueries2['default'])(_fbjsLibExecutionEnvironment.canUseDOM ? _historyLibCreateBrowserHistory2['default'] : _historyLibCreateMemoryHistory2['default'])();
-
-  exports['default'] = location;
+  exports['default'] = Footer;
   module.exports = exports['default'];
 
 /***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-  module.exports = require("fbjs/lib/ExecutionEnvironment");
-
-/***/ },
-/* 6 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -285,11 +404,181 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _underscore = __webpack_require__(38);
+  __webpack_require__(32);
+
+  var Libraries = (function (_React$Component) {
+    _inherits(Libraries, _React$Component);
+
+    function Libraries(props) {
+      _classCallCheck(this, Libraries);
+
+      _get(Object.getPrototypeOf(Libraries.prototype), 'constructor', this).call(this, props);
+
+      this.state = {
+        libraries: [{
+          title: 'Javascript',
+          description: 'Official Stackable library for JS + ReactJs and AngularJs',
+          image: 'icon-javascript',
+          url: 'https://github.com/get-stackable/stackable-javascript'
+        }, {
+          title: 'NodeJs',
+          description: 'Stackable NodeJs Boilerplate',
+          image: 'icon-nodejs',
+          url: 'https://github.com/get-stackable/stackable-javascript'
+        }, {
+          title: 'PHP',
+          description: 'Official PHP library',
+          image: 'icon-php-alt',
+          url: 'https://github.com/get-stackable/stackable-php'
+        }, {
+          title: 'iOS / Swift',
+          description: 'iOS / Swift library coming soon!',
+          image: 'fa fa-apple',
+          url: '#'
+        }, {
+          title: 'Android',
+          description: 'Android library coming soon!',
+          image: 'fa fa-android',
+          url: '#'
+        }]
+      };
+    }
+
+    _createClass(Libraries, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'ui fluid container libraries' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'ui center aligned container' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui medium main header' },
+              'Developers we love you',
+              _react2['default'].createElement(
+                'div',
+                { className: 'sub header' },
+                _react2['default'].createElement(
+                  'a',
+                  { className: 'link' },
+                  'we created some libraries check them out'
+                )
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui doubling five column grid' },
+              this.state.libraries.map(function (library, index) {
+                return _react2['default'].createElement(
+                  'div',
+                  { className: 'column inner', key: index },
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'icon' },
+                    _react2['default'].createElement('i', { className: library.image })
+                  ),
+                  _react2['default'].createElement(
+                    'div',
+                    { className: 'content' },
+                    _react2['default'].createElement(
+                      'a',
+                      { className: 'ui small header', href: library.url },
+                      library.title
+                    ),
+                    _react2['default'].createElement(
+                      'p',
+                      null,
+                      library.description
+                    )
+                  )
+                );
+              })
+            )
+          )
+        );
+      }
+    }]);
+
+    return Libraries;
+  })(_react2['default'].Component);
+
+  exports['default'] = Libraries;
+  module.exports = exports['default'];
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+  module.exports = __webpack_require__.p + "412d1dff3a7139f42e9fc8fea322fa24.png";
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  var _fbjsLibExecutionEnvironment = __webpack_require__(7);
+
+  var _historyLibCreateBrowserHistory = __webpack_require__(40);
+
+  var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
+
+  var _historyLibCreateMemoryHistory = __webpack_require__(41);
+
+  var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
+
+  var _historyLibUseQueries = __webpack_require__(42);
+
+  var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
+
+  var location = (0, _historyLibUseQueries2['default'])(_fbjsLibExecutionEnvironment.canUseDOM ? _historyLibCreateBrowserHistory2['default'] : _historyLibCreateMemoryHistory2['default'])();
+
+  exports['default'] = location;
+  module.exports = exports['default'];
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+  module.exports = require("fbjs/lib/ExecutionEnvironment");
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _underscore = __webpack_require__(44);
 
   var _underscore2 = _interopRequireDefault(_underscore);
 
-  __webpack_require__(23);
+  __webpack_require__(27);
 
   var consoleCode = [{
     className: '.typed-console-nodejs',
@@ -535,7 +824,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 7 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -550,7 +839,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(24);
+  __webpack_require__(28);
 
   function FeatureOne() {
     return _react2['default'].createElement(
@@ -630,7 +919,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 8 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -645,7 +934,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(25);
+  __webpack_require__(29);
 
   function FeatureTwo() {
     return _react2['default'].createElement(
@@ -721,7 +1010,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 9 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -736,177 +1025,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(26);
-
-  function Footer() {
-    return _react2['default'].createElement(
-      'div',
-      { className: 'ui inverted vertical footer segment' },
-      _react2['default'].createElement(
-        'div',
-        { className: 'ui container' },
-        _react2['default'].createElement(
-          'div',
-          { className: 'ui stackable inverted divided equal height stackable grid' },
-          _react2['default'].createElement(
-            'div',
-            { className: 'four wide column' },
-            _react2['default'].createElement(
-              'h4',
-              { className: 'ui inverted header' },
-              'Help & Support'
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'ui inverted link list' },
-              _react2['default'].createElement(
-                'a',
-                { href: 'http://slack.stackable.space', className: 'item' },
-                'Slack'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: 'https://twitter.com/GetStackable', className: 'item' },
-                'Twitter'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: 'https://www.facebook.com/Stackablespace-1079849398701825/', className: 'item' },
-                'Facebook'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: 'mailto:hi@appfuel.co.uk', className: 'item' },
-                'Email'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: 'http://docs.stackable.space', className: 'item' },
-                'Documentation'
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'four wide column' },
-            _react2['default'].createElement(
-              'h4',
-              { className: 'ui inverted header' },
-              'Libraries'
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'ui inverted link list' },
-              _react2['default'].createElement(
-                'a',
-                { href: 'https://github.com/get-stackable/stackable-javascript', className: 'item' },
-                'Javascript'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: 'https://github.com/get-stackable/stackable-javascript', className: 'item' },
-                'NodeJS'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: 'https://github.com/get-stackable/stackable-php', className: 'item' },
-                'PHP'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: '#', className: 'item' },
-                'iOS / Swift'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: '#', className: 'item' },
-                'Android'
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'four wide column' },
-            _react2['default'].createElement(
-              'h4',
-              { className: 'ui inverted header' },
-              'Updates'
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'ui inverted link list' },
-              _react2['default'].createElement(
-                'a',
-                { href: 'http://blog.stackable.space', className: 'item' },
-                'Blog'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: '#', className: 'item' },
-                'Newsletter'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: '#', className: 'item' },
-                'About'
-              ),
-              _react2['default'].createElement(
-                'a',
-                { href: '#', className: 'item' },
-                'Careers'
-              )
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'four wide column' },
-            _react2['default'].createElement(
-              'h4',
-              { className: 'ui inverted header' },
-              '© 2016 Stackable'
-            ),
-            _react2['default'].createElement(
-              'p',
-              null,
-              _react2['default'].createElement(
-                'a',
-                { href: 'http://www.appfuel.co.uk', className: 'link' },
-                'appfuel.co.uk'
-              ),
-              ' -  boutique javascript agency'
-            )
-          )
-        )
-      )
-    );
-  }
-
-  exports['default'] = Footer;
-  module.exports = exports['default'];
-
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  __webpack_require__(27);
+  __webpack_require__(31);
 
   var _Navigation = __webpack_require__(14);
 
   var _Navigation2 = _interopRequireDefault(_Navigation);
 
-  var _TopBar = __webpack_require__(15);
+  var _TopBar = __webpack_require__(17);
 
   var _TopBar2 = _interopRequireDefault(_TopBar);
 
@@ -931,133 +1056,6 @@ module.exports =
   };
 
   exports['default'] = Layout;
-  module.exports = exports['default'];
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  __webpack_require__(28);
-
-  var Libraries = (function (_React$Component) {
-    _inherits(Libraries, _React$Component);
-
-    function Libraries(props) {
-      _classCallCheck(this, Libraries);
-
-      _get(Object.getPrototypeOf(Libraries.prototype), 'constructor', this).call(this, props);
-
-      this.state = {
-        libraries: [{
-          title: 'Javascript',
-          description: 'Official Stackable library for JS + ReactJs and AngularJs',
-          image: 'icon-javascript',
-          url: 'https://github.com/get-stackable/stackable-javascript'
-        }, {
-          title: 'NodeJs',
-          description: 'Stackable NodeJs Boilerplate',
-          image: 'icon-nodejs',
-          url: 'https://github.com/get-stackable/stackable-javascript'
-        }, {
-          title: 'PHP',
-          description: 'Official PHP library',
-          image: 'icon-php-alt',
-          url: 'https://github.com/get-stackable/stackable-php'
-        }, {
-          title: 'iOS / Swift',
-          description: 'iOS / Swift library coming soon!',
-          image: 'fa fa-apple',
-          url: '#'
-        }, {
-          title: 'Android',
-          description: 'Android library coming soon!',
-          image: 'fa fa-android',
-          url: '#'
-        }]
-      };
-    }
-
-    _createClass(Libraries, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          { className: 'ui fluid container libraries' },
-          _react2['default'].createElement(
-            'div',
-            { className: 'ui center aligned container' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'ui medium main header' },
-              'Developers we love you',
-              _react2['default'].createElement(
-                'div',
-                { className: 'sub header' },
-                _react2['default'].createElement(
-                  'a',
-                  { className: 'link' },
-                  'we created some libraries check them out'
-                )
-              )
-            ),
-            _react2['default'].createElement(
-              'div',
-              { className: 'ui doubling five column grid' },
-              this.state.libraries.map(function (library, index) {
-                return _react2['default'].createElement(
-                  'div',
-                  { className: 'column inner', key: index },
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'icon' },
-                    _react2['default'].createElement('i', { className: library.image })
-                  ),
-                  _react2['default'].createElement(
-                    'div',
-                    { className: 'content' },
-                    _react2['default'].createElement(
-                      'a',
-                      { className: 'ui small header', href: library.url },
-                      library.title
-                    ),
-                    _react2['default'].createElement(
-                      'p',
-                      null,
-                      library.description
-                    )
-                  )
-                );
-              })
-            )
-          )
-        );
-      }
-    }]);
-
-    return Libraries;
-  })(_react2['default'].Component);
-
-  exports['default'] = Libraries;
   module.exports = exports['default'];
 
 /***/ },
@@ -1096,9 +1094,9 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(29);
+  __webpack_require__(33);
 
-  var _coreLocation = __webpack_require__(4);
+  var _coreLocation = __webpack_require__(6);
 
   var _coreLocation2 = _interopRequireDefault(_coreLocation);
 
@@ -1193,7 +1191,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(30);
+  __webpack_require__(34);
 
   function MasterHead() {
     return _react2['default'].createElement(
@@ -1268,7 +1266,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(31);
+  __webpack_require__(35);
 
   var _Link = __webpack_require__(12);
 
@@ -1299,7 +1297,7 @@ module.exports =
             { className: 'ui large secondary inverted pointing menu' },
             _react2['default'].createElement(
               'a',
-              { className: 'header item', style: { 'fontWeight': '800' } },
+              { className: 'header item', href: '/', style: { 'fontWeight': '800' } },
               _react2['default'].createElement('img', { className: 'logo', src: 'logo.png' }),
               'stackable'
             ),
@@ -1310,7 +1308,7 @@ module.exports =
             ),
             _react2['default'].createElement(
               'a',
-              { className: 'item desktop' },
+              { className: 'item desktop', href: '/pricing' },
               _react2['default'].createElement(
                 'strong',
                 null,
@@ -1364,6 +1362,11 @@ module.exports =
                 ),
                 _react2['default'].createElement(
                   'a',
+                  { className: 'item', href: 'http://slack.stackable.space' },
+                  'Help & Support'
+                ),
+                _react2['default'].createElement(
+                  'a',
                   { className: 'item', href: 'http://docs.stackable.space' },
                   'Documentation'
                 ),
@@ -1404,13 +1407,346 @@ module.exports =
     value: true
   });
 
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(36);
+
+  var PageHeading = (function (_React$Component) {
+    _inherits(PageHeading, _React$Component);
+
+    function PageHeading() {
+      _classCallCheck(this, PageHeading);
+
+      _get(Object.getPrototypeOf(PageHeading.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(PageHeading, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'ui dark fluid container' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'ui center aligned container pageHeading' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui huge inverted header' },
+              this.props.title,
+              _react2['default'].createElement(
+                'div',
+                { className: 'sub header' },
+                this.props.subTitle
+              )
+            )
+          )
+        );
+      }
+    }], [{
+      key: 'propTypes',
+      value: {
+        title: _react2['default'].PropTypes.string.isRequired,
+        subTitle: _react2['default'].PropTypes.string.isRequired
+      },
+      enumerable: true
+    }]);
+
+    return PageHeading;
+  })(_react2['default'].Component);
+
+  exports['default'] = PageHeading;
+  module.exports = exports['default'];
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(37);
+
+  var PricingBasic = (function (_React$Component) {
+    _inherits(PricingBasic, _React$Component);
+
+    function PricingBasic() {
+      _classCallCheck(this, PricingBasic);
+
+      _get(Object.getPrototypeOf(PricingBasic.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(PricingBasic, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'ui fluid container pricing basic' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'ui container' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui stackable three columns grid' },
+              _react2['default'].createElement(
+                'div',
+                { className: 'column' },
+                _react2['default'].createElement(
+                  'div',
+                  { className: 'ui medium header' },
+                  'Deliver Content like a pro'
+                ),
+                _react2['default'].createElement(
+                  'p',
+                  null,
+                  'Grab a free account tons of resources and space to test your next website or app or multichannel content platform!'
+                )
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'column' },
+                _react2['default'].createElement(
+                  'table',
+                  { className: 'ui very basic table' },
+                  _react2['default'].createElement(
+                    'thead',
+                    null,
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'th',
+                        null,
+                        'Micro'
+                      )
+                    )
+                  ),
+                  _react2['default'].createElement(
+                    'tbody',
+                    null,
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        { className: 'price' },
+                        '$0'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        _react2['default'].createElement(
+                          'a',
+                          { className: 'ui yellow button', href: 'http://ui.stackable.space' },
+                          'Start Now'
+                        )
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '500mb Database',
+                        _react2['default'].createElement('br', null),
+                        'on our development servers'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '20,000 Api Requests'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '1gb Image storage'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '500 containers'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        { className: 'compare' },
+                        'COMPARE ALL FEATURES'
+                      )
+                    )
+                  )
+                )
+              ),
+              _react2['default'].createElement(
+                'div',
+                { className: 'column' },
+                _react2['default'].createElement(
+                  'table',
+                  { className: 'ui very basic table' },
+                  _react2['default'].createElement(
+                    'thead',
+                    null,
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'th',
+                        null,
+                        'Production'
+                      )
+                    )
+                  ),
+                  _react2['default'].createElement(
+                    'tbody',
+                    null,
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        { className: 'price' },
+                        '$20'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        _react2['default'].createElement(
+                          'a',
+                          { className: 'ui yellow button', href: 'http://ui.stackable.space' },
+                          'Start Now'
+                        )
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '1000mb Database',
+                        _react2['default'].createElement('br', null),
+                        'production grade'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '200,000 Api Requests'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        '1gb Image storage'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        null,
+                        'unlimited containers'
+                      )
+                    ),
+                    _react2['default'].createElement(
+                      'tr',
+                      null,
+                      _react2['default'].createElement(
+                        'td',
+                        { className: 'compare' },
+                        'COMPARE ALL FEATURES'
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        );
+      }
+    }]);
+
+    return PricingBasic;
+  })(_react2['default'].Component);
+
+  exports['default'] = PricingBasic;
+  module.exports = exports['default'];
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
   var _react = __webpack_require__(1);
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(32);
+  __webpack_require__(38);
 
   function TopBar() {
     return _react2['default'].createElement(
@@ -1428,7 +1764,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 16 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1493,7 +1829,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 17 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1564,14 +1900,8 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
 
   'use strict';
 
@@ -1593,6 +1923,14 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
+  var _componentsLibraries = __webpack_require__(4);
+
+  var _componentsLibraries2 = _interopRequireDefault(_componentsLibraries);
+
+  var _componentsFooter = __webpack_require__(3);
+
+  var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
+
   var _default = (function (_Component) {
     _inherits(_default, _Component);
 
@@ -1609,15 +1947,21 @@ module.exports =
           'div',
           null,
           _react2['default'].createElement(
-            'h1',
-            null,
-            'About Us'
+            'div',
+            { style: { 'textAlign': 'center' } },
+            _react2['default'].createElement(
+              'h1',
+              null,
+              'About us'
+            ),
+            _react2['default'].createElement(
+              'p',
+              null,
+              'Coming soon.'
+            )
           ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
+          _react2['default'].createElement(_componentsLibraries2['default'], null),
+          _react2['default'].createElement(_componentsFooter2['default'], null)
         );
       }
     }]);
@@ -1629,7 +1973,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1694,7 +2038,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1759,7 +2103,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1824,7 +2168,80 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 22 */
+/* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _componentsLibraries = __webpack_require__(4);
+
+  var _componentsLibraries2 = _interopRequireDefault(_componentsLibraries);
+
+  var _componentsFooter = __webpack_require__(3);
+
+  var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'div',
+            { style: { 'textAlign': 'center' } },
+            _react2['default'].createElement(
+              'h1',
+              null,
+              'Careers'
+            ),
+            _react2['default'].createElement(
+              'p',
+              null,
+              'Coming soon.'
+            )
+          ),
+          _react2['default'].createElement(_componentsLibraries2['default'], null),
+          _react2['default'].createElement(_componentsFooter2['default'], null)
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
+
+/***/ },
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1851,25 +2268,25 @@ module.exports =
 
   var _componentsMasterHead2 = _interopRequireDefault(_componentsMasterHead);
 
-  var _componentsAboutApis = __webpack_require__(6);
+  var _componentsAboutApis = __webpack_require__(8);
 
   var _componentsAboutApis2 = _interopRequireDefault(_componentsAboutApis);
 
-  var _componentsFeatureOne = __webpack_require__(7);
+  var _componentsFeatureOne = __webpack_require__(9);
 
   var _componentsFeatureOne2 = _interopRequireDefault(_componentsFeatureOne);
 
-  var _componentsFeatureTwo = __webpack_require__(8);
+  var _componentsFeatureTwo = __webpack_require__(10);
 
   var _componentsFeatureTwo2 = _interopRequireDefault(_componentsFeatureTwo);
 
-  var _componentsFooter = __webpack_require__(9);
-
-  var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
-
-  var _componentsLibraries = __webpack_require__(11);
+  var _componentsLibraries = __webpack_require__(4);
 
   var _componentsLibraries2 = _interopRequireDefault(_componentsLibraries);
+
+  var _componentsFooter = __webpack_require__(3);
+
+  var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -1903,60 +2320,75 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 1.25rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider {\n  margin-top: -52px;\n}\n\n.about.apis .features .ui.vertical.divider img {\n  width: 50px;\n  height: auto;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 1.1em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 5em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 3em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: -12px 0 -14px 0;\n  padding: 0 3.5em;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(33) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
-
-  // exports
-
-
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview {\n  color: #EBEDF1;\n}\n\n.container.preview .ui.header {}\n\n.container.preview .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview .left.column {\n  padding: 5em 0;\n}\n\n.container.preview .left.column .image {\n  padding-left: 13em;\n}\n\n.container.preview .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
-
-  // exports
-
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview.two {\n  color: #030828;\n}\n\n.container.preview.two .ui.header {\n  color: #50b5e1\n}\n\n.container.preview.two .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview.two .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview.two .left.column {\n  padding: 5em;\n}\n\n.container.preview.two .left.column .image {\n  padding-left: 11em;\n}\n\n.container.preview.two .left.column .ui.list .item {\n  color: rgba(0,0,0,.6);\n}\n\n.container.preview.two .left.column .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.container.preview.two .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview.two img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
-
-  // exports
-
-
-/***/ },
 /* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(2)();
-  // imports
+  'use strict';
 
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
 
-  // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n\n.footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.column:not(.row), .footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.row>.column {\n  -webkit-box-shadow: -1px 0 0 0 #040B36;\n          box-shadow: -1px 0 0 0 #040B36\n}\n\n.footer h4 {\n  font-size: 1.24rem;\n}\n\n.footer .ui.list .item {\n  font-weight: 400;\n  font-size: 0.9em;\n}\n", ""]);
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  // exports
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _componentsPageHeading = __webpack_require__(15);
+
+  var _componentsPageHeading2 = _interopRequireDefault(_componentsPageHeading);
+
+  var _componentsLibraries = __webpack_require__(4);
+
+  var _componentsLibraries2 = _interopRequireDefault(_componentsLibraries);
+
+  var _componentsFooter = __webpack_require__(3);
+
+  var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
+
+  var _componentsPricingBasic = __webpack_require__(16);
+
+  var _componentsPricingBasic2 = _interopRequireDefault(_componentsPricingBasic);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(_componentsPageHeading2['default'], {
+            title: 'Pricing',
+            subTitle: 'No credit card required' }),
+          _react2['default'].createElement(_componentsPricingBasic2['default'], null),
+          _react2['default'].createElement(_componentsLibraries2['default'], null),
+          _react2['default'].createElement(_componentsFooter2['default'], null)
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
 
 /***/ },
 /* 27 */
@@ -1967,7 +2399,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828\n}\n\n.ui.header.huge {\n  font-size: 3em;;\n}\n\n.ui.header.large {\n  font-size: 2.34em;;\n}\n\n.ui.header.medium {\n  font-size: 1.75em;;\n}\n\nh3.ui.header {\n  font-size: 1.9rem;\n}\n\np {\n  font-size: 1.1em;\n  line-height: 1.3em;\n}\n\n.ui.list {\n  font-size: 1.2em;\n}\n\n@media only screen and (max-width: 768px) {\n  .ui.fluid.container {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n  .ui.secondary.menu {\n    padding: 10px 0 !important;\n  }\n  .masterhead {\n    padding-top: 1em !important;\n  }\n  .about.apis .console {\n    padding: 1em !important;;\n  }\n  .about.apis .ui.grid > .column {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;;\n  }\n  .container.preview.two {\n    padding: 2em 0;\n  }\n}\n\n@media only screen and (max-width: 992px) {\n  .ui.secondary.menu .desktop {\n    display: none !important;;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .ui.secondary.menu .mobile {\n    display: none !important;;\n  }\n}\n\n@media (min-width: 1200px) {}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 1.25rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider {\n  margin-top: -52px;\n}\n\n.about.apis .features .ui.vertical.divider img {\n  width: 50px;\n  height: auto;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 1.1em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 5em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 3em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: -12px 0 -14px 0;\n  padding: 0 3.5em;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(39) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
 
   // exports
 
@@ -1981,7 +2413,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 2em;\n}\n\n.libraries .column.inner {}\n\n.libraries .column.inner:hover a {\n  text-decoration: underline !important;\n}\n\n.libraries .column.inner:hover .icon > i {\n  color: #f05852 !important;\n}\n\n.libraries .column > a.ui.header {\n  color: rgba(0,0,0,0.6) !important;\n}\n\n.libraries .column .icon {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 50px;\n  line-height: 1.8em;\n  margin: 0 auto 20px auto;\n}\n\n.libraries .column .icon > i {\n  font-size: 55px;\n  line-height: 110px;\n  padding-left: 15px\n}\n\n.libraries .column .icon > i.fa {\n  padding: 0 !important;\n  line-height: 100px !important;\n}\n\n.libraries .column p {\n  font-size: 0.99em !important;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview {\n  color: #EBEDF1;\n}\n\n.container.preview .ui.header {}\n\n.container.preview .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview .left.column {\n  padding: 5em 0;\n}\n\n.container.preview .left.column .image {\n  padding-left: 13em;\n}\n\n.container.preview .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -1995,7 +2427,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n.Link {\n\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview.two {\n  color: #030828;\n}\n\n.container.preview.two .ui.header {\n  color: #50b5e1\n}\n\n.container.preview.two .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview.two .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview.two .left.column {\n  padding: 5em;\n}\n\n.container.preview.two .left.column .image {\n  padding-left: 11em;\n}\n\n.container.preview.two .left.column .ui.list .item {\n  color: rgba(0,0,0,.6);\n}\n\n.container.preview.two .left.column .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.container.preview.two .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview.two img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -2009,7 +2441,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.masterhead {\n  padding-top: 8em;\n  background-image: url(" + __webpack_require__(3) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.masterhead .ui.header > .sub.header {\n  font-size: 0.9em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #FFFFFF;\n}\n\n.masterhead .try.free {\n  margin: 1.5em 0;\n}\n\n.masterhead .try.free .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.masterhead .try.free p {\n  color: #FFFFFF;\n  font-weight: 300;\n  font-size: 0.9em;\n}\n\n.masterhead .try.free p span.underline {\n  font-weight: 500;\n  text-decoration: underline;\n}\n\n.masterhead img.banner {\n  margin-bottom: -5px;\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n\n.footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.column:not(.row), .footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.row>.column {\n  -webkit-box-shadow: -1px 0 0 0 #040B36;\n          box-shadow: -1px 0 0 0 #040B36\n}\n\n.footer h4 {\n  font-size: 1.24rem;\n}\n\n.footer .ui.list .item {\n  font-weight: 400;\n  font-size: 0.9em;\n}\n", ""]);
 
   // exports
 
@@ -2023,7 +2455,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ui.secondary.inverted.menu a.item {\n  color: #FFFFFF !important;\n}\n\n.ui.secondary.menu {\n  border: 0 !important;\n  padding: 40px 0;\n}\n\n.ui.secondary.menu .item {}\n\n.ui.secondary.menu .item.header {\n  font-size: 1.8em;\n  font-weight: 500;\n  padding: .2em 0.14em;\n  margin-right: 2em;\n}\n\n.ui.secondary.menu .item.header img {\n  width: 0.7em !important;\n  margin-right: 14px !important;\n  margin-top: 4px !important;\n}\n\n.ui.secondary.menu .inverted.button {\n  height: 38px;\n  -webkit-box-shadow: 0 0 0 1px #202B6C inset!important;\n          box-shadow: 0 0 0 1px #202B6C inset!important;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828\n}\n\n.ui.header.huge {\n  font-size: 3em;;\n}\n\n.ui.header.large {\n  font-size: 2.34em;;\n}\n\n.ui.header.medium {\n  font-size: 1.75em;;\n}\n\nh3.ui.header {\n  font-size: 1.9rem;\n}\n\np {\n  font-size: 1.1em;\n  line-height: 1.3em;\n}\n\n.ui.list {\n  font-size: 1.2em;\n}\n\n@media only screen and (max-width: 768px) {\n  .ui.fluid.container {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n  .ui.secondary.menu {\n    padding: 10px 0 !important;\n  }\n  .masterhead {\n    padding-top: 1em !important;\n  }\n  .about.apis .console {\n    padding: 1em !important;;\n  }\n  .about.apis .ui.grid > .column {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;;\n  }\n  .container.preview.two {\n    padding: 2em 0;\n  }\n}\n\n@media only screen and (max-width: 992px) {\n  .ui.secondary.menu .desktop {\n    display: none !important;;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .ui.secondary.menu .mobile {\n    display: none !important;;\n  }\n}\n\n@media (min-width: 1200px) {}\n", ""]);
 
   // exports
 
@@ -2037,43 +2469,127 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.top.bar {\n  background-color: #010418;\n  height: 40px;\n  color: #C0C5D8;\n  text-align: center;\n  padding-top: 10px;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 2em;\n}\n\n.libraries .column.inner {}\n\n.libraries .column.inner:hover a {\n  text-decoration: underline !important;\n}\n\n.libraries .column.inner:hover .icon > i {\n  color: #f05852 !important;\n}\n\n.libraries .column > a.ui.header {\n  color: rgba(0,0,0,0.6) !important;\n}\n\n.libraries .column .icon {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 50px;\n  line-height: 1.8em;\n  margin: 0 auto 20px auto;\n}\n\n.libraries .column .icon > i {\n  font-size: 55px;\n  line-height: 110px;\n  padding-left: 15px\n}\n\n.libraries .column .icon > i.fa {\n  padding: 0 !important;\n  line-height: 100px !important;\n}\n\n.libraries .column p {\n  font-size: 0.99em !important;\n}\n", ""]);
 
   // exports
 
 
 /***/ },
 /* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n.Link {\n\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.masterhead {\n  padding-top: 8em;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.masterhead .ui.header > .sub.header {\n  font-size: 0.9em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #FFFFFF;\n}\n\n.masterhead .try.free {\n  margin: 1.5em 0;\n}\n\n.masterhead .try.free .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.masterhead .try.free p {\n  color: #FFFFFF;\n  font-weight: 300;\n  font-size: 0.9em;\n}\n\n.masterhead .try.free p span.underline {\n  font-weight: 500;\n  text-decoration: underline;\n}\n\n.masterhead img.banner {\n  margin-bottom: -5px;\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ui.secondary.inverted.menu a.item {\n  color: #FFFFFF !important;\n}\n\n.ui.secondary.menu {\n  border: 0 !important;\n  padding: 40px 0;\n}\n\n.ui.secondary.menu .item {}\n\n.ui.secondary.menu .item.header {\n  font-size: 1.8em;\n  font-weight: 500;\n  padding: .2em 0.14em;\n  margin-right: 2em;\n}\n\n.ui.secondary.menu .item.header img {\n  width: 0.7em !important;\n  margin-right: 14px !important;\n  margin-top: 4px !important;\n}\n\n.ui.secondary.menu .inverted.button {\n  height: 38px;\n  -webkit-box-shadow: 0 0 0 1px #202B6C inset!important;\n          box-shadow: 0 0 0 1px #202B6C inset!important;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pageHeading {\n  padding: 3em 0;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center 0;\n  -webkit-background-size: 55%;\n  background-size: 55%;\n}\n\n.pageHeading .ui.header > .sub.header {\n  font-size: 0.3em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #4251B0;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pricing.basic {\n  padding: 4em 0;\n  background-color: #F2F2F2;\n}\n\n.pricing.basic table {\n  text-align: center;\n}\n\n.pricing.basic table thead {\n  background-color: #171F52;\n}\n\n.pricing.basic table thead tr th {\n  color: #FFFFFF;\n  font-size: 1.6em;\n  font-weight: 300;\n  padding: 0.8em 0 !important;\n  border-radius: 0 !important;\n}\n\n.pricing.basic table tbody {\n  font-family: \"adelle\",serif;\n  background-color: #FFFFFF;\n  padding-top: 1em;\n  padding-bottom: 2em;\n}\n\n.pricing.basic table tbody tr {\n  border-bottom: 0 !important;\n}\n\n.pricing.basic table tbody tr td {}\n\n.pricing.basic table tbody tr td.price {\n  font-size: 2.4em;\n  font-weight: 500;\n  font-style: italic;\n}\n\n.pricing.basic table tbody tr td.compare {\n  font-size: 1.4em;\n  text-decoration: underline;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.top.bar {\n  background-color: #010418;\n  height: 40px;\n  color: #C0C5D8;\n  text-align: center;\n  padding-top: 10px;\n}\n", ""]);
+
+  // exports
+
+
+/***/ },
+/* 39 */
 /***/ function(module, exports) {
 
   module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeUAAAEECAYAAAAWKCxFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MDhDRDUxMEU0NTUxMUU1QTM2Qjg5MDBCM0QzOEVGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MDhDRDUxMUU0NTUxMUU1QTM2Qjg5MDBCM0QzOEVGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQwOENENTBFRTQ1NTExRTVBMzZCODkwMEIzRDM4RUY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQwOENENTBGRTQ1NTExRTVBMzZCODkwMEIzRDM4RUY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+mdG62wAABjJJREFUeNrs3U1sk3UcwPFfX/YGyxzoYIiAoiaGEyYsAgfDxYQYDmjQxBjjiYN3lYMXY4yJXvTswXjzpGiC3Ey4+JKgeCBqFDUbAWJkAxrYGGtp/Ze13WjrYNNt6D6f5Ad9nqcryb+HL0/78JCpVCoBACy/rCUAgDtDvvrL0J597Y51ptlfm11p7q3tAwBuz5U0Z9J8n+Zwms/STDU/6fixIzNRbuOpNO+kech6AsCC9aZ5pDbPpfk1zaE0n7R7cvPH17k0b9eeLMgA8O+qtvXjWmtzzQebz5TfSvOqNQOARVVv7aG/O1M+IMgAsKRhPtAuytULuN61PgCwpN6LWRdR16P8TJr7rA0ALKmNaZ5tjvJ+6wIAy2J/c5SHrAkALIsd9Qf1q68H5/sKHZmIXd35uCeXjZFSOU5MlqL5hp3bHlgdj2/vj4lr5Tj65WiMFoo3Hc+vyseG3eujs68zLp0qxNjJC94aAFaaDc1R7ppvkF9Z0xP3d8xcvP1NVy4+KFxrbO/deXe8fnBrZDPT2y/sHYwX3/gxzo1OP6ejtyN2vLY9egZ6bmxviU0x/Pnp+P3wsLcHgJWk5UKvedmdzpBnB7lqZ9q3tbYvl0r88vObG0Guuqs3Hy89vbGxvemJjY0g1215cnN0r7313w8ymYy3EID/nQVFeV2+/Y+ty03vX9uXj77VrXfw3DLY3Xi8an1Pm9hGdA90izIAony7Rorlln3V75NPl6b3jxWKcf5iy/2246eRicbjyyNXWo6X0+uOn5u45Z/vv5sEQJRrvp0sxXdpZgf5yHgxztWiXE473vxwOCanZuI98sdkvP/p2cb2mS/OxqWfCzOvkX7ol49+i+LloigDsCJlqoEb2rNvQZV7uDMX63OZGE5nuGdKrWfPA/0dMbStL8Yny/H1yUJMNZ1hVz+FXrNtTXT1d924+vrqn1e9IwCsOMePHbnxvWz+n7zIqanrcWqO4+cvFePoV2NznPFGXPjhoncDAGKBH18DAKIMAKIMAIgyAIgyACDKACDKAMDyaPfvlN3BAwAWX8+cUT55YjhKxevV2265jyUALJ6JRx97cO4opyBXf1ttrQBgUfW223nTd8rZnK+YAWAJjN8yygDA8hFlABBlAECUAUCUAYBsNtslygBwB8hkM3lRBoA7+QzaEgCAKAMAogwAogwAiDIAiDIAIMoAIMoAgCgDgCgDAKIMAKIMAIgyAIgyACDKACDKAIAoA4AoAwCiDACiDACIMgCIMgAgygCAKAOAKAMAogwAogwAiDIAiDIAIMoAIMoAgCgDgCgDAKIMAKIMAIgyAIgyACDKACDKAIAoA4AoAwCiDACiDACIMgAgygAgygCAKAOAKAMAogwAogwAiDIAiDIAIMoAIMoAgCgDgCgDAKIMAKIMAIgyAIgyACDKACDKAIAoA4AoAwCiDACIMgCIMgAgygAgygCAKAOAKAMAogwAogwAiDIAiDIAIMoAIMoAgCgDgCgDAKIMAKIMAIgyAIgyACDKACDKAIAoA4AoWwIAEGUAQJQBQJQBAFEGAFEGAEQZAEQZABBlABBlAECUAUCUAQBRBgBRBgBEGQBEGQAQZQAQZQBAlAFAlAEAUQYAUQYARBkAEGUAEGUAQJQBQJQBAFEGAFEGAEQZAEQZABBlABBlAECUAUCUAQBRBgBRBgBEGQBEGQAQZQAQZQBAlAFAlAEAUQYARBkARBkAEGUAEGUAQJQBQJQBAFEGAFEGAEQZAEQZABBlABBlAECUAUCUAQBRBgBRBgBEGQBEGQAQZQAQZQBAlAEAUQYAUQYARBkARBkAEGUAEGUAQJQBQJQBAFEGAFEGAEQZAEQZABBlABBlAECUAUCUAQBRBgBRBgBEGQBEGQAQZQAQZUsAAKIMAIgyAIgyACDKACDKAIAoA4AoAwCiDACiDACIMgCIMgAgygAgygCAKAOAKAMAogwAogwAiDIAiDIAIMoAIMoAgCgDAKIMAKIMAIgyAIgyACDKACDKAIAoA4AoAwCiDACiDACIMgCIMgAgygAgygCAKAOAKAMAogwAogwAiDIAiDIAIMoAgCgDgCgDAKIMAKIMAIgyAPwXZCqVilUAAGfKAEDdXwIMAL76xVNt5atRAAAAAElFTkSuQmCC"
 
 /***/ },
-/* 34 */
+/* 40 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
-/* 35 */
+/* 41 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createMemoryHistory");
 
 /***/ },
-/* 36 */
+/* 42 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ },
-/* 37 */
+/* 43 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
 
 /***/ },
-/* 38 */
+/* 44 */
 /***/ function(module, exports) {
 
   module.exports = require("underscore");

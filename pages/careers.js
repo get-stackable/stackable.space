@@ -8,7 +8,7 @@ export default class extends Component {
     return (
       <div>
         <div style={{'textAlign': 'center'}}>
-          <h1>About us</h1>
+          <h1>Careers</h1>
           <p>Coming soon.</p>
         </div>
         <Libraries />

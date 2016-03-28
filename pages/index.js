@@ -3,8 +3,8 @@ import MasterHead from '../components/MasterHead';
 import AboutApis from '../components/AboutApis';
 import FeatureOne from '../components/FeatureOne';
 import FeatureTwo from '../components/FeatureTwo';
-import Footer from '../components/Footer';
 import Libraries from '../components/Libraries';
+import Footer from '../components/Footer';
 
 export default class extends Component {
 

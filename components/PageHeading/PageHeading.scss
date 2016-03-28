@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.pageHeading {
+  padding: 3em 0;
+  background-image: url(../../static/bg-box.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  -webkit-background-size: 55%;
+  background-size: 55%;
+  .ui.header {
+    > .sub.header {
+      font-size: 0.3em;
+      font-style: italic;
+      font-family: $font-family-secondary;
+      color: $color-san-marino;
+    }
+  }
+}

@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
+import PageHeading from '../components/PageHeading';
 import Libraries from '../components/Libraries';
 import Footer from '../components/Footer';
+import PricingBasic from '../components/PricingBasic';
 
 export default class extends Component {
 
   render() {
     return (
       <div>
-        <div style={{'textAlign': 'center'}}>
-          <h1>About us</h1>
-          <p>Coming soon.</p>
-        </div>
+        <PageHeading
+          title="Pricing"
+          subTitle="No credit card required"/>
+        <PricingBasic />
         <Libraries />
         <Footer />
       </div>

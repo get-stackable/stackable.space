@@ -31,8 +31,8 @@ function Footer() {
             <div className="ui inverted link list">
               <a href="http://blog.stackable.space" className="item">Blog</a>
               <a href="#" className="item">Newsletter</a>
-              <a href="#" className="item">About</a>
-              <a href="#" className="item">Careers</a>
+              <a href="/about" className="item">About</a>
+              <a href="/careers" className="item">Careers</a>
             </div>
           </div>
           <div className="four wide column">

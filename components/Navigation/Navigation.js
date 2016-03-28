@@ -11,14 +11,14 @@ class Navigation extends React.Component {
     return (
       <div className="ui container">
         <div className="ui large secondary inverted pointing menu">
-          <a className="header item" style={{'fontWeight': '800'}}>
+          <a className="header item" href="/" style={{'fontWeight': '800'}}>
             <img className="logo" src="logo.png"/>
             stackable
           </a>
           <a className="item desktop" href="#how-it-works">
             How it works
           </a>
-          <a className="item desktop">
+          <a className="item desktop" href="/pricing">
             <strong>Pricing</strong>
           </a>
           <div className="right menu desktop">
@@ -43,6 +43,9 @@ class Navigation extends React.Component {
               </a>
               <a className="item">
                 <strong>Pricing</strong>
+              </a>
+              <a className="item" href="http://slack.stackable.space">
+                Help & Support
               </a>
               <a className="item" href="http://docs.stackable.space">
                 Documentation

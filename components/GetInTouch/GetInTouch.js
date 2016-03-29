@@ -9,7 +9,7 @@ class GetInTouch extends React.Component {
           <div className="ui large main inverted header">
             Need something a bit special? get in touch.
           </div>
-          <a className="big ui yellow button" href="#">
+          <a className="big ui yellow button" href="/contact">
             contact us
           </a>
         </div>

@@ -14,6 +14,7 @@ function Footer() {
               <a href="https://www.facebook.com/Stackablespace-1079849398701825/" className="item">Facebook</a>
               <a href="mailto:hi@appfuel.co.uk" className="item">Email</a>
               <a href="http://docs.stackable.space" className="item">Documentation</a>
+              <a href="/contact" className="item">Contact</a>
             </div>
           </div>
           <div className="four wide column">

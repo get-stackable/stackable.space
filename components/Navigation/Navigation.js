@@ -15,7 +15,7 @@ class Navigation extends React.Component {
             <img className="logo" src="logo.png"/>
             stackable
           </a>
-          <a className="item desktop" href="#how-it-works">
+          <a className="item desktop" href="/#how-it-works">
             How it works
           </a>
           <a className="item desktop" href="/pricing">
@@ -38,7 +38,7 @@ class Navigation extends React.Component {
           <div className="ui right inverted button dropdown item mobile">
             Menu
             <div className="menu">
-              <a className="item" href="#how-it-works">
+              <a className="item" href="/#how-it-works">
                 How it works
               </a>
               <a className="item">

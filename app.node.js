@@ -59,7 +59,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(43);
+  var _reactDom = __webpack_require__(47);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -69,29 +69,29 @@ module.exports =
 
   var _coreLocation2 = _interopRequireDefault(_coreLocation);
 
-  var _componentsLayout = __webpack_require__(11);
+  var _componentsLayout = __webpack_require__(12);
 
   var _componentsLayout2 = _interopRequireDefault(_componentsLayout);
 
   var routes = {
     '/404': function _() {
-      return __webpack_require__(18);
-    }, '/500': function _() {
-      return __webpack_require__(19);
-    }, '/about': function about() {
       return __webpack_require__(20);
-    }, '/blog': function blog() {
+    }, '/500': function _() {
       return __webpack_require__(21);
-    }, '/blog/test-article-one': function blogTestArticleOne() {
+    }, '/about': function about() {
       return __webpack_require__(22);
-    }, '/blog/test-article-two': function blogTestArticleTwo() {
+    }, '/blog': function blog() {
       return __webpack_require__(23);
-    }, '/careers': function careers() {
+    }, '/blog/test-article-one': function blogTestArticleOne() {
       return __webpack_require__(24);
-    }, '/': function _() {
+    }, '/blog/test-article-two': function blogTestArticleTwo() {
       return __webpack_require__(25);
-    }, '/pricing': function pricing() {
+    }, '/careers': function careers() {
       return __webpack_require__(26);
+    }, '/': function _() {
+      return __webpack_require__(27);
+    }, '/pricing': function pricing() {
+      return __webpack_require__(28);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -232,7 +232,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(30);
+  __webpack_require__(32);
 
   function Footer() {
     return _react2['default'].createElement(
@@ -404,7 +404,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(32);
+  __webpack_require__(35);
 
   var Libraries = (function (_React$Component) {
     _inherits(Libraries, _React$Component);
@@ -527,15 +527,15 @@ module.exports =
 
   var _fbjsLibExecutionEnvironment = __webpack_require__(7);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(40);
+  var _historyLibCreateBrowserHistory = __webpack_require__(44);
 
   var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 
-  var _historyLibCreateMemoryHistory = __webpack_require__(41);
+  var _historyLibCreateMemoryHistory = __webpack_require__(45);
 
   var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
 
-  var _historyLibUseQueries = __webpack_require__(42);
+  var _historyLibUseQueries = __webpack_require__(46);
 
   var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 
@@ -574,11 +574,11 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _underscore = __webpack_require__(44);
+  var _underscore = __webpack_require__(48);
 
   var _underscore2 = _interopRequireDefault(_underscore);
 
-  __webpack_require__(27);
+  __webpack_require__(29);
 
   var consoleCode = [{
     className: '.typed-console-nodejs',
@@ -839,7 +839,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(28);
+  __webpack_require__(30);
 
   function FeatureOne() {
     return _react2['default'].createElement(
@@ -934,7 +934,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(29);
+  __webpack_require__(31);
 
   function FeatureTwo() {
     return _react2['default'].createElement(
@@ -1019,19 +1019,84 @@ module.exports =
     value: true
   });
 
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(33);
+
+  var GetInTouch = (function (_React$Component) {
+    _inherits(GetInTouch, _React$Component);
+
+    function GetInTouch() {
+      _classCallCheck(this, GetInTouch);
+
+      _get(Object.getPrototypeOf(GetInTouch.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(GetInTouch, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'ui fluid container get touch' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'ui center aligned container' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui large main inverted header' },
+              'Need something a bit special? get in touch.'
+            ),
+            _react2['default'].createElement(
+              'a',
+              { className: 'big ui yellow button', href: '#' },
+              'contact us'
+            )
+          )
+        );
+      }
+    }]);
+
+    return GetInTouch;
+  })(_react2['default'].Component);
+
+  exports['default'] = GetInTouch;
+  module.exports = exports['default'];
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
   var _react = __webpack_require__(1);
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(31);
+  __webpack_require__(34);
 
-  var _Navigation = __webpack_require__(14);
+  var _Navigation = __webpack_require__(15);
 
   var _Navigation2 = _interopRequireDefault(_Navigation);
 
-  var _TopBar = __webpack_require__(17);
+  var _TopBar = __webpack_require__(19);
 
   var _TopBar2 = _interopRequireDefault(_TopBar);
 
@@ -1059,7 +1124,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1094,7 +1159,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(33);
+  __webpack_require__(36);
 
   var _coreLocation = __webpack_require__(6);
 
@@ -1176,7 +1241,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1191,7 +1256,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(34);
+  __webpack_require__(37);
 
   function MasterHead() {
     return _react2['default'].createElement(
@@ -1243,7 +1308,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1266,9 +1331,9 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(35);
+  __webpack_require__(38);
 
-  var _Link = __webpack_require__(12);
+  var _Link = __webpack_require__(13);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -1398,7 +1463,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1421,7 +1486,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(36);
+  __webpack_require__(39);
 
   var PageHeading = (function (_React$Component) {
     _inherits(PageHeading, _React$Component);
@@ -1470,7 +1535,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1493,7 +1558,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(37);
+  __webpack_require__(40);
 
   var PricingBasic = (function (_React$Component) {
     _inherits(PricingBasic, _React$Component);
@@ -1518,7 +1583,7 @@ module.exports =
               { className: 'ui stackable three columns grid' },
               _react2['default'].createElement(
                 'div',
-                { className: 'column' },
+                { className: 'column', style: { 'paddingTop': '8em' } },
                 _react2['default'].createElement(
                   'div',
                   { className: 'ui medium header' },
@@ -1580,7 +1645,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '500mb Database',
+                        '250mb Database',
                         _react2['default'].createElement('br', null),
                         'on our development servers'
                       )
@@ -1591,7 +1656,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '20,000 Api Requests'
+                        '60,000 Api Requests'
                       )
                     ),
                     _react2['default'].createElement(
@@ -1609,7 +1674,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '500 containers'
+                        'unlimited stacks'
                       )
                     ),
                     _react2['default'].createElement(
@@ -1618,7 +1683,11 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         { className: 'compare' },
-                        'COMPARE ALL FEATURES'
+                        _react2['default'].createElement(
+                          'a',
+                          { href: '#detailed-table' },
+                          'COMPARE ALL FEATURES'
+                        )
                       )
                     )
                   )
@@ -1674,7 +1743,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '1000mb Database',
+                        '1025 Database',
                         _react2['default'].createElement('br', null),
                         'production grade'
                       )
@@ -1694,7 +1763,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '1gb Image storage'
+                        '2gb Image storage'
                       )
                     ),
                     _react2['default'].createElement(
@@ -1703,7 +1772,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        'unlimited containers'
+                        'unlimited stacks'
                       )
                     ),
                     _react2['default'].createElement(
@@ -1712,7 +1781,11 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         { className: 'compare' },
-                        'COMPARE ALL FEATURES'
+                        _react2['default'].createElement(
+                          'a',
+                          { href: '#detailed-table' },
+                          'COMPARE ALL FEATURES'
+                        )
                       )
                     )
                   )
@@ -1731,7 +1804,212 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 17 */
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(41);
+
+  var plans = [{
+    feature: 'Price',
+    micro: 'Free!',
+    production: '$20',
+    professional: '$200',
+    enterprise: 'contact'
+  }, {
+    feature: 'DB Storage',
+    micro: '250 mb',
+    production: '1024 mb',
+    professional: '2048 mb',
+    enterprise: 'contact'
+  }, {
+    feature: 'Image Storage',
+    micro: '1024 mb',
+    production: '2048 mb',
+    professional: '5000 mb',
+    enterprise: 'contact'
+  }, {
+    feature: 'API Calls',
+    micro: '60,000 monthly',
+    production: '200,000 monthly',
+    professional: '1,000,000 monthly',
+    enterprise: 'contact'
+  }, {
+    feature: 'Images Requests',
+    micro: '50,000 monthly',
+    production: '250,000 monthly',
+    professional: '1,000,000 monthly',
+    enterprise: 'contact'
+  }, {
+    feature: 'Unlimited Stacks',
+    micro: '<i class="check circle icon primary" />',
+    production: '<i class="check circle icon primary" />',
+    professional: '<i class="check circle icon secondary" />',
+    enterprise: 'contact'
+  }, {
+    feature: 'Unlimited Containers',
+    micro: '<i class="check circle icon primary" />',
+    production: '<i class="check circle icon primary" />',
+    professional: '<i class="check circle icon secondary" />',
+    enterprise: 'contact'
+  }, {
+    feature: 'Unlimited Items',
+    micro: '<i class="check circle icon primary" />',
+    production: '<i class="check circle icon primary" />',
+    professional: '<i class="check circle icon secondary" />',
+    enterprise: 'contact'
+  }, {
+    feature: 'Unlimited Users',
+    micro: '<i class="check circle icon primary" />',
+    production: '<i class="check circle icon primary" />',
+    professional: '<i class="check circle icon secondary" />',
+    enterprise: 'contact'
+  }, {
+    feature: 'Database Type',
+    micro: 'development level',
+    production: 'enterprise level',
+    professional: 'enterprise level',
+    enterprise: 'contact'
+  }];
+
+  var PricingDetailed = (function (_React$Component) {
+    _inherits(PricingDetailed, _React$Component);
+
+    function PricingDetailed() {
+      _classCallCheck(this, PricingDetailed);
+
+      _get(Object.getPrototypeOf(PricingDetailed.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(PricingDetailed, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'ui fluid dark container pricing detailed', id: 'detailed-table' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'ui center aligned text container' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'ui medium main inverted header' },
+              'Compare all features',
+              _react2['default'].createElement(
+                'div',
+                { className: 'sub header' },
+                'see your pathway to success below!'
+              )
+            ),
+            _react2['default'].createElement(
+              'table',
+              { className: 'ui basic inverted table' },
+              _react2['default'].createElement(
+                'thead',
+                null,
+                _react2['default'].createElement(
+                  'tr',
+                  null,
+                  _react2['default'].createElement('th', { width: '24%' }),
+                  _react2['default'].createElement(
+                    'th',
+                    { width: '19%' },
+                    'Micro'
+                  ),
+                  _react2['default'].createElement(
+                    'th',
+                    { width: '19%' },
+                    'Production'
+                  ),
+                  _react2['default'].createElement(
+                    'th',
+                    { width: '19%' },
+                    'Professional'
+                  ),
+                  _react2['default'].createElement(
+                    'th',
+                    { width: '19%' },
+                    'Enterprise'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'tr',
+                  { className: 'secondary' },
+                  _react2['default'].createElement(
+                    'th',
+                    null,
+                    'Features'
+                  ),
+                  _react2['default'].createElement(
+                    'th',
+                    null,
+                    _react2['default'].createElement('img', { src: '/stack-2.png' })
+                  ),
+                  _react2['default'].createElement(
+                    'th',
+                    null,
+                    _react2['default'].createElement('img', { src: '/stack-2.png' })
+                  ),
+                  _react2['default'].createElement(
+                    'th',
+                    null,
+                    _react2['default'].createElement('img', { src: '/stack-2.png' })
+                  ),
+                  _react2['default'].createElement('th', null)
+                )
+              ),
+              _react2['default'].createElement(
+                'tbody',
+                null,
+                plans.map(function (plan) {
+                  return _react2['default'].createElement(
+                    'tr',
+                    null,
+                    _react2['default'].createElement(
+                      'td',
+                      { className: 'dotted' },
+                      plan.feature,
+                      _react2['default'].createElement('i', { className: 'help circle icon' })
+                    ),
+                    _react2['default'].createElement('td', { dangerouslySetInnerHTML: { __html: plan.micro } }),
+                    _react2['default'].createElement('td', { dangerouslySetInnerHTML: { __html: plan.production } }),
+                    _react2['default'].createElement('td', { dangerouslySetInnerHTML: { __html: plan.professional } }),
+                    _react2['default'].createElement('td', { dangerouslySetInnerHTML: { __html: plan.enterprise } })
+                  );
+                })
+              )
+            )
+          )
+        );
+      }
+    }]);
+
+    return PricingDetailed;
+  })(_react2['default'].Component);
+
+  exports['default'] = PricingDetailed;
+  module.exports = exports['default'];
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1746,7 +2024,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(38);
+  __webpack_require__(42);
 
   function TopBar() {
     return _react2['default'].createElement(
@@ -1764,7 +2042,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 18 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1829,7 +2107,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 19 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -1900,7 +2178,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -1973,7 +2251,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -2038,7 +2316,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 22 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -2103,7 +2381,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 23 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
   /**
@@ -2168,7 +2446,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 24 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2241,7 +2519,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 25 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2264,7 +2542,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsMasterHead = __webpack_require__(13);
+  var _componentsMasterHead = __webpack_require__(14);
 
   var _componentsMasterHead2 = _interopRequireDefault(_componentsMasterHead);
 
@@ -2320,7 +2598,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -2343,7 +2621,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsPageHeading = __webpack_require__(15);
+  var _componentsPageHeading = __webpack_require__(16);
 
   var _componentsPageHeading2 = _interopRequireDefault(_componentsPageHeading);
 
@@ -2355,9 +2633,17 @@ module.exports =
 
   var _componentsFooter2 = _interopRequireDefault(_componentsFooter);
 
-  var _componentsPricingBasic = __webpack_require__(16);
+  var _componentsPricingBasic = __webpack_require__(17);
 
   var _componentsPricingBasic2 = _interopRequireDefault(_componentsPricingBasic);
+
+  var _componentsPricingDetailed = __webpack_require__(18);
+
+  var _componentsPricingDetailed2 = _interopRequireDefault(_componentsPricingDetailed);
+
+  var _componentsGetInTouch = __webpack_require__(11);
+
+  var _componentsGetInTouch2 = _interopRequireDefault(_componentsGetInTouch);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -2378,7 +2664,8 @@ module.exports =
             title: 'Pricing',
             subTitle: 'No credit card required' }),
           _react2['default'].createElement(_componentsPricingBasic2['default'], null),
-          _react2['default'].createElement(_componentsLibraries2['default'], null),
+          _react2['default'].createElement(_componentsPricingDetailed2['default'], null),
+          _react2['default'].createElement(_componentsGetInTouch2['default'], null),
           _react2['default'].createElement(_componentsFooter2['default'], null)
         );
       }
@@ -2391,34 +2678,6 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 1.25rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider {\n  margin-top: -52px;\n}\n\n.about.apis .features .ui.vertical.divider img {\n  width: 50px;\n  height: auto;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 1.1em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 5em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 3em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: -12px 0 -14px 0;\n  padding: 0 3.5em;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(39) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
-
-  // exports
-
-
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(2)();
-  // imports
-
-
-  // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview {\n  color: #EBEDF1;\n}\n\n.container.preview .ui.header {}\n\n.container.preview .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview .left.column {\n  padding: 5em 0;\n}\n\n.container.preview .left.column .image {\n  padding-left: 13em;\n}\n\n.container.preview .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
-
-  // exports
-
-
-/***/ },
 /* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2427,7 +2686,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview.two {\n  color: #030828;\n}\n\n.container.preview.two .ui.header {\n  color: #50b5e1\n}\n\n.container.preview.two .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview.two .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview.two .left.column {\n  padding: 5em;\n}\n\n.container.preview.two .left.column .image {\n  padding-left: 11em;\n}\n\n.container.preview.two .left.column .ui.list .item {\n  color: rgba(0,0,0,.6);\n}\n\n.container.preview.two .left.column .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.container.preview.two .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview.two img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.about.apis .ui.header {}\n\n.about.apis .ui.header.large {\n  margin: 1.4em 0;\n}\n\n.about.apis .ui.header.large .sub.header {\n  font-size: 1.25rem;\n}\n\n.about.apis .features {\n  margin: 2em 0;\n  padding: 3.5em 0;\n  position: relative;\n}\n\n.about.apis .features .ui.vertical.divider {\n  margin-top: -52px;\n}\n\n.about.apis .features .ui.vertical.divider img {\n  width: 50px;\n  height: auto;\n}\n\n.about.apis .features .ui.vertical.divider:before {\n  border: 0;\n}\n\n.about.apis .features .ui.vertical.divider:after {\n  border: 0;\n}\n\n.about.apis .features .column .icon {\n  height: 72px;\n}\n\n.about.apis .features .column p {\n  font-size: 1.1em;\n  margin-top: 10px;\n  color: #F2F2F2;\n}\n\n.about.apis .features .column:nth-child(1) {\n  //color: #468181;\n}\n\n.about.apis .features .column:nth-child(2) {\n  //color: #50b5e1;\n}\n\n.about.apis .features .column:nth-child(3) {\n  //color: #f05852;\n}\n\n.about.apis .console {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 5em 3em;\n  margin-top: -28px;\n}\n\n.about.apis .console p {\n  font-family: \"adelle\",serif !important;\n}\n\n.about.apis .console .ui.header {\n  color: #2C3E50;\n}\n\n.about.apis .console .check.github {\n  margin-top: 3em;\n}\n\n.about.apis .console .check.github i {\n  text-decoration: none;\n  color: #000000;\n  font-size: 2.5em;\n}\n\n.about.apis .console .ui.secondary.menu {\n  margin: -12px 0 -14px 0;\n  padding: 0 3.5em;\n}\n\n.about.apis .console .ui.secondary.menu .item {\n  padding: .31428571em .92857143em;\n  color: #010418;\n  background-color: transparent\n}\n\n.about.apis .console .ui.secondary.menu .item.active {\n  background-color: #010418;\n  color: #FFFFFF;\n}\n\n.about.apis .console .typed-console-container {\n  background-image: url(" + __webpack_require__(43) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n  min-height: 290px;\n  padding: 60px 42px;\n  color: #FFFFFF;\n  font-weight: 500;\n}\n\n.typed-cursor{\n  opacity: 1;\n  -webkit-animation: blink 0.7s infinite;\n  -o-animation: blink 0.7s infinite;\n     animation: blink 0.7s infinite;\n}\n@-o-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n@-webkit-keyframes blink{\n  0% { opacity:1; }\n  50% { opacity:0; }\n  100% { opacity:1; }\n}\n\n", ""]);
 
   // exports
 
@@ -2441,7 +2700,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n\n.footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.column:not(.row), .footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.row>.column {\n  -webkit-box-shadow: -1px 0 0 0 #040B36;\n          box-shadow: -1px 0 0 0 #040B36\n}\n\n.footer h4 {\n  font-size: 1.24rem;\n}\n\n.footer .ui.list .item {\n  font-weight: 400;\n  font-size: 0.9em;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview {\n  color: #EBEDF1;\n}\n\n.container.preview .ui.header {}\n\n.container.preview .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview .left.column {\n  padding: 5em 0;\n}\n\n.container.preview .left.column .image {\n  padding-left: 13em;\n}\n\n.container.preview .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -2455,7 +2714,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828\n}\n\n.ui.header.huge {\n  font-size: 3em;;\n}\n\n.ui.header.large {\n  font-size: 2.34em;;\n}\n\n.ui.header.medium {\n  font-size: 1.75em;;\n}\n\nh3.ui.header {\n  font-size: 1.9rem;\n}\n\np {\n  font-size: 1.1em;\n  line-height: 1.3em;\n}\n\n.ui.list {\n  font-size: 1.2em;\n}\n\n@media only screen and (max-width: 768px) {\n  .ui.fluid.container {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n  .ui.secondary.menu {\n    padding: 10px 0 !important;\n  }\n  .masterhead {\n    padding-top: 1em !important;\n  }\n  .about.apis .console {\n    padding: 1em !important;;\n  }\n  .about.apis .ui.grid > .column {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;;\n  }\n  .container.preview.two {\n    padding: 2em 0;\n  }\n}\n\n@media only screen and (max-width: 992px) {\n  .ui.secondary.menu .desktop {\n    display: none !important;;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .ui.secondary.menu .mobile {\n    display: none !important;;\n  }\n}\n\n@media (min-width: 1200px) {}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.container.preview.two {\n  color: #030828;\n}\n\n.container.preview.two .ui.header {\n  color: #50b5e1\n}\n\n.container.preview.two .ui.header.huge {\n  margin-top: 0.4em;\n  margin-bottom: 1em;\n}\n\n.container.preview.two .ui.header.huge .sub.header {\n  font-size: 1.2rem;\n  font-family: \"adelle\",serif;\n}\n\n.container.preview.two .left.column {\n  padding: 5em;\n}\n\n.container.preview.two .left.column .image {\n  padding-left: 11em;\n}\n\n.container.preview.two .left.column .ui.list .item {\n  color: rgba(0,0,0,.6);\n}\n\n.container.preview.two .left.column .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.container.preview.two .right.column {\n  padding: 5em;\n  text-align: center;\n}\n\n.container.preview.two img.container.preview {\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -2469,7 +2728,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 2em;\n}\n\n.libraries .column.inner {}\n\n.libraries .column.inner:hover a {\n  text-decoration: underline !important;\n}\n\n.libraries .column.inner:hover .icon > i {\n  color: #f05852 !important;\n}\n\n.libraries .column > a.ui.header {\n  color: rgba(0,0,0,0.6) !important;\n}\n\n.libraries .column .icon {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 50px;\n  line-height: 1.8em;\n  margin: 0 auto 20px auto;\n}\n\n.libraries .column .icon > i {\n  font-size: 55px;\n  line-height: 110px;\n  padding-left: 15px\n}\n\n.libraries .column .icon > i.fa {\n  padding: 0 !important;\n  line-height: 100px !important;\n}\n\n.libraries .column p {\n  font-size: 0.99em !important;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.footer {\n  padding: 5em 0 !important;\n  background-color: #030828 !important;\n  text-align: center;\n  font-family: \"adelle\",serif;\n}\n\n.footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.column:not(.row), .footer .ui.inverted.divided.grid:not([class*=\"vertically divided\"])>.row>.column {\n  -webkit-box-shadow: -1px 0 0 0 #040B36;\n          box-shadow: -1px 0 0 0 #040B36\n}\n\n.footer h4 {\n  font-size: 1.24rem;\n}\n\n.footer .ui.list .item {\n  font-weight: 400;\n  font-size: 0.9em;\n}\n", ""]);
 
   // exports
 
@@ -2483,7 +2742,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n.Link {\n\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.get.touch {\n  background-color: #171F52;\n  padding: 5em 0;\n}\n\n.get.touch .ui.header {\n  font-weight: 300;\n}\n", ""]);
 
   // exports
 
@@ -2497,7 +2756,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.masterhead {\n  padding-top: 8em;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.masterhead .ui.header > .sub.header {\n  font-size: 0.9em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #FFFFFF;\n}\n\n.masterhead .try.free {\n  margin: 1.5em 0;\n}\n\n.masterhead .try.free .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.masterhead .try.free p {\n  color: #FFFFFF;\n  font-weight: 300;\n  font-size: 0.9em;\n}\n\n.masterhead .try.free p span.underline {\n  font-weight: 500;\n  text-decoration: underline;\n}\n\n.masterhead img.banner {\n  margin-bottom: -5px;\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\nhtml, body {\n  background-color: #FFFFFF !important;\n  color: #030828 !important;;\n  font-family: 'Raleway',sans-serif !important;;\n}\n\n.underline {\n  text-decoration: underline;\n}\n\na.link {\n  text-decoration: underline;\n  color: #50b5e1;\n  font-family: \"adelle\",serif !important;\n}\n\n.ui.container {\n}\n\n.ui.container.dark {\n  background-color: #030828;;\n}\n\n.ui.container.text {\n  max-width: 800px!important;;\n}\n\n.ui.text.container, .ui.button, .ui.header, .ui.menu, .ui.form input:not([type]), .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=search], .ui.form input[type=password], .ui.form input[type=date], .ui.form input[type=datetime-local], .ui.form input[type=tel], .ui.form input[type=time], .ui.form input[type=url], .ui.form input[type=number] {\n  font-family: 'Raleway',sans-serif !important;\n}\n\n.ui.button {\n}\n\n.ui.button.yellow {\n  background-color: #F0A852;;\n}\n\n.ui.header {\n  color: #030828\n}\n\n.ui.header.huge {\n  font-size: 3em;;\n}\n\n.ui.header.large {\n  font-size: 2.34em;;\n}\n\n.ui.header.medium {\n  font-size: 1.75em;;\n}\n\nh3.ui.header {\n  font-size: 1.9rem;\n}\n\np {\n  font-size: 1.1em;\n  line-height: 1.3em;\n}\n\n.ui.list {\n  font-size: 1.2em;\n}\n\n@media only screen and (max-width: 768px) {\n  .ui.fluid.container {\n    margin-left: 0 !important;\n    margin-right: 0 !important;\n  }\n  .ui.secondary.menu {\n    padding: 10px 0 !important;\n  }\n  .masterhead {\n    padding-top: 1em !important;\n  }\n  .about.apis .console {\n    padding: 1em !important;;\n  }\n  .about.apis .ui.grid > .column {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;;\n  }\n  .container.preview.two {\n    padding: 2em 0;\n  }\n}\n\n@media only screen and (max-width: 992px) {\n  .ui.secondary.menu .desktop {\n    display: none !important;;\n  }\n}\n\n@media only screen and (min-width: 992px) {\n  .ui.secondary.menu .mobile {\n    display: none !important;;\n  }\n}\n\n@media (min-width: 1200px) {}\n", ""]);
 
   // exports
 
@@ -2511,7 +2770,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ui.secondary.inverted.menu a.item {\n  color: #FFFFFF !important;\n}\n\n.ui.secondary.menu {\n  border: 0 !important;\n  padding: 40px 0;\n}\n\n.ui.secondary.menu .item {}\n\n.ui.secondary.menu .item.header {\n  font-size: 1.8em;\n  font-weight: 500;\n  padding: .2em 0.14em;\n  margin-right: 2em;\n}\n\n.ui.secondary.menu .item.header img {\n  width: 0.7em !important;\n  margin-right: 14px !important;\n  margin-top: 4px !important;\n}\n\n.ui.secondary.menu .inverted.button {\n  height: 38px;\n  -webkit-box-shadow: 0 0 0 1px #202B6C inset!important;\n          box-shadow: 0 0 0 1px #202B6C inset!important;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.libraries {\n  background-color: #F2F2F2;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center 220px;\n  -webkit-background-size: 27% 27%;\n          background-size: 27%;\n  padding: 4em 0;\n  border-top: 2px solid #030828;\n  color: #6D6C6C;\n}\n\n.libraries .ui.main.header {\n  margin-bottom: 2em;\n}\n\n.libraries .column.inner {}\n\n.libraries .column.inner:hover a {\n  text-decoration: underline !important;\n}\n\n.libraries .column.inner:hover .icon > i {\n  color: #f05852 !important;\n}\n\n.libraries .column > a.ui.header {\n  color: rgba(0,0,0,0.6) !important;\n}\n\n.libraries .column .icon {\n  width: 100px;\n  height: 100px;\n  background: white;\n  border-radius: 50px;\n  line-height: 1.8em;\n  margin: 0 auto 20px auto;\n}\n\n.libraries .column .icon > i {\n  font-size: 55px;\n  line-height: 110px;\n  padding-left: 15px\n}\n\n.libraries .column .icon > i.fa {\n  padding: 0 !important;\n  line-height: 100px !important;\n}\n\n.libraries .column p {\n  font-size: 0.99em !important;\n}\n", ""]);
 
   // exports
 
@@ -2525,7 +2784,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pageHeading {\n  padding: 3em 0;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center 0;\n  -webkit-background-size: 55%;\n  background-size: 55%;\n}\n\n.pageHeading .ui.header > .sub.header {\n  font-size: 0.3em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #4251B0;\n}\n", ""]);
+  exports.push([module.id, "/**\n * React Static Boilerplate\n * https://github.com/koistya/react-static-boilerplate\n * Copyright (c) Konstantin Tarkus (@koistya) | MIT license\n */\n\n.Link {\n\n}\n", ""]);
 
   // exports
 
@@ -2539,7 +2798,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pricing.basic {\n  padding: 4em 0;\n  background-color: #F2F2F2;\n}\n\n.pricing.basic table {\n  text-align: center;\n}\n\n.pricing.basic table thead {\n  background-color: #171F52;\n}\n\n.pricing.basic table thead tr th {\n  color: #FFFFFF;\n  font-size: 1.6em;\n  font-weight: 300;\n  padding: 0.8em 0 !important;\n  border-radius: 0 !important;\n}\n\n.pricing.basic table tbody {\n  font-family: \"adelle\",serif;\n  background-color: #FFFFFF;\n  padding-top: 1em;\n  padding-bottom: 2em;\n}\n\n.pricing.basic table tbody tr {\n  border-bottom: 0 !important;\n}\n\n.pricing.basic table tbody tr td {}\n\n.pricing.basic table tbody tr td.price {\n  font-size: 2.4em;\n  font-weight: 500;\n  font-style: italic;\n}\n\n.pricing.basic table tbody tr td.compare {\n  font-size: 1.4em;\n  text-decoration: underline;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.masterhead {\n  padding-top: 8em;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.masterhead .ui.header > .sub.header {\n  font-size: 0.9em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #FFFFFF;\n}\n\n.masterhead .try.free {\n  margin: 1.5em 0;\n}\n\n.masterhead .try.free .button {\n  border-radius: 0;\n  padding: .78571429em 2.5em;\n}\n\n.masterhead .try.free p {\n  color: #FFFFFF;\n  font-weight: 300;\n  font-size: 0.9em;\n}\n\n.masterhead .try.free p span.underline {\n  font-weight: 500;\n  text-decoration: underline;\n}\n\n.masterhead img.banner {\n  margin-bottom: -5px;\n  max-width: 100%;\n  height: auto;\n}\n", ""]);
 
   // exports
 
@@ -2553,43 +2812,99 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.top.bar {\n  background-color: #010418;\n  height: 40px;\n  color: #C0C5D8;\n  text-align: center;\n  padding-top: 10px;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.ui.secondary.inverted.menu a.item {\n  color: #FFFFFF !important;\n}\n\n.ui.secondary.menu {\n  border: 0 !important;\n  padding: 40px 0;\n}\n\n.ui.secondary.menu .item {}\n\n.ui.secondary.menu .item.header {\n  font-size: 1.8em;\n  font-weight: 500;\n  padding: .2em 0.14em;\n  margin-right: 2em;\n}\n\n.ui.secondary.menu .item.header img {\n  width: 0.7em !important;\n  margin-right: 14px !important;\n  margin-top: 4px !important;\n}\n\n.ui.secondary.menu .inverted.button {\n  height: 38px;\n  -webkit-box-shadow: 0 0 0 1px #202B6C inset!important;\n          box-shadow: 0 0 0 1px #202B6C inset!important;\n}\n", ""]);
 
   // exports
 
 
 /***/ },
 /* 39 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeUAAAEECAYAAAAWKCxFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MDhDRDUxMEU0NTUxMUU1QTM2Qjg5MDBCM0QzOEVGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MDhDRDUxMUU0NTUxMUU1QTM2Qjg5MDBCM0QzOEVGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQwOENENTBFRTQ1NTExRTVBMzZCODkwMEIzRDM4RUY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQwOENENTBGRTQ1NTExRTVBMzZCODkwMEIzRDM4RUY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+mdG62wAABjJJREFUeNrs3U1s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"
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pageHeading {\n  padding: 3em 0;\n  background-image: url(" + __webpack_require__(5) + ");\n  background-repeat: no-repeat;\n  background-position: center 0;\n  -webkit-background-size: 55%;\n  background-size: 55%;\n}\n\n.pageHeading .ui.header > .sub.header {\n  font-size: 0.3em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #4251B0;\n}\n", ""]);
+
+  // exports
+
 
 /***/ },
 /* 40 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("history/lib/createBrowserHistory");
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pricing.basic {\n  padding: 4em 0;\n  background-color: #F2F2F2;\n}\n\n.pricing.basic table {\n  text-align: center;\n}\n\n.pricing.basic table thead {\n  background-color: #171F52;\n}\n\n.pricing.basic table thead tr th {\n  color: #FFFFFF;\n  font-size: 1.6em;\n  font-weight: 300;\n  padding: 0.8em 0 !important;\n  border-radius: 0 !important;\n}\n\n.pricing.basic table tbody {\n  font-family: \"adelle\",serif;\n  background-color: #FFFFFF;\n  padding-top: 1em;\n  padding-bottom: 2em;\n}\n\n.pricing.basic table tbody tr {\n  border-bottom: 0 !important;\n}\n\n.pricing.basic table tbody tr td {}\n\n.pricing.basic table tbody tr td.price {\n  font-size: 2.4em;\n  font-weight: 500;\n  font-style: italic;\n}\n\n.pricing.basic table tbody tr td.compare {\n  font-size: 1.4em;\n  text-decoration: underline;\n}\n\n.pricing.basic table tbody tr td.compare a {\n  color: #030828;\n}\n", ""]);
+
+  // exports
+
 
 /***/ },
 /* 41 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("history/lib/createMemoryHistory");
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pricing.detailed {\n  padding: 4em 0;\n}\n\n.pricing.detailed .ui.header .sub.header {\n  font-family: \"adelle\",serif !important;\n}\n\n.pricing.detailed table {\n  text-align: center;\n}\n\n.pricing.detailed table thead {\n  background-color: #171F52;\n}\n\n.pricing.detailed table thead tr th {\n  border-color: #030828 !important;\n  font-size: 1.5em;\n  font-weight: 300;\n  padding: 0.4em 0 !important;\n  border-radius: 0 !important;\n}\n\n.pricing.detailed table thead tr.secondary th {\n  font-size: 1em;\n}\n\n.pricing.detailed table tbody {\n  background-color: #FFFFFF;\n  color: #171F52;\n  font-size: 0.9em;\n}\n\n.pricing.detailed table tbody td i.primary {\n  color: #50b5e1;\n  font-size: 1.5em;\n}\n\n.pricing.detailed table tbody td i.secondary {\n  color: #468181;\n  font-size: 1.5em;\n}\n\n.pricing.detailed table tbody td.dotted {\n  text-decoration: dotted;\n}\n\n.pricing.detailed table tbody td.dotted i {\n  margin-left: 3px;\n  color: #6D6C6C;\n}\n", ""]);
+
+  // exports
+
 
 /***/ },
 /* 42 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("history/lib/useQueries");
+  exports = module.exports = __webpack_require__(2)();
+  // imports
+
+
+  // module
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.top.bar {\n  background-color: #010418;\n  height: 40px;\n  color: #C0C5D8;\n  text-align: center;\n  padding-top: 10px;\n}\n", ""]);
+
+  // exports
+
 
 /***/ },
 /* 43 */
 /***/ function(module, exports) {
 
-  module.exports = require("react-dom");
+  module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeUAAAEECAYAAAAWKCxFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MDhDRDUxMEU0NTUxMUU1QTM2Qjg5MDBCM0QzOEVGOCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MDhDRDUxMUU0NTUxMUU1QTM2Qjg5MDBCM0QzOEVGOCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQwOENENTBFRTQ1NTExRTVBMzZCODkwMEIzRDM4RUY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQwOENENTBGRTQ1NTExRTVBMzZCODkwMEIzRDM4RUY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+mdG62wAABjJJREFUeNrs3U1s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"
 
 /***/ },
 /* 44 */
+/***/ function(module, exports) {
+
+  module.exports = require("history/lib/createBrowserHistory");
+
+/***/ },
+/* 45 */
+/***/ function(module, exports) {
+
+  module.exports = require("history/lib/createMemoryHistory");
+
+/***/ },
+/* 46 */
+/***/ function(module, exports) {
+
+  module.exports = require("history/lib/useQueries");
+
+/***/ },
+/* 47 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-dom");
+
+/***/ },
+/* 48 */
 /***/ function(module, exports) {
 
   module.exports = require("underscore");

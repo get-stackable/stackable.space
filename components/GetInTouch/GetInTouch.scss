@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+.get.touch {
+  background-color: $color-bunting;
+  padding: 5em 0;
+  .ui.header {
+    font-weight: $font-weight-lite;
+  }
+}

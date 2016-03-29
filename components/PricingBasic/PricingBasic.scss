@@ -33,6 +33,9 @@
           &.compare {
             font-size: 1.4em;
             text-decoration: underline;
+            a {
+              color: $color-black-rock;
+            }
           }
         }
       }

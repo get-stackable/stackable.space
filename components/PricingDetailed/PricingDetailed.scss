@@ -1,0 +1,52 @@
+@import '../variables.scss';
+
+.pricing.detailed {
+  .ui.header {
+    .sub.header {
+      font-family: $font-family-secondary !important;
+    }
+  }
+  padding: 4em 0;
+  table {
+    text-align: center;
+    thead {
+      background-color: $color-bunting;
+      tr {
+        th {
+          border-color: $color-black-rock !important;
+          font-size: 1.5em;
+          font-weight: $font-weight-lite;
+          padding: 0.4em 0 !important;
+          border-radius: 0 !important;
+        }
+        &.secondary {
+          th {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+    tbody {
+      background-color: $color-white;
+      color: $color-bunting;
+      font-size: 0.9em;
+      td {
+        &.dotted {
+          text-decoration: dotted;
+          i {
+            margin-left: 3px;
+            color: $color-dove-gray;
+          }
+        }
+        i.primary {
+          color: $brand-color-two;
+          font-size: 1.5em;
+        }
+        i.secondary {
+          color: $brand-color;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

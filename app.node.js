@@ -1927,7 +1927,9 @@ module.exports =
                         { className: 'compare' },
                         _react2['default'].createElement(
                           'a',
-                          { href: '#detailed-table' },
+                          { onClick: function () {
+                              return smoothScroll.animateScroll('#detailed-table');
+                            } },
                           'COMPARE ALL FEATURES'
                         )
                       )
@@ -2025,7 +2027,9 @@ module.exports =
                         { className: 'compare' },
                         _react2['default'].createElement(
                           'a',
-                          { href: '#detailed-table' },
+                          { onClick: function () {
+                              return smoothScroll.animateScroll('#detailed-table');
+                            } },
                           'COMPARE ALL FEATURES'
                         )
                       )

@@ -3148,7 +3148,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pageHeading {\n  padding: 3em 0;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-repeat: no-repeat;\n  background-position: center 0;\n  -webkit-background-size: 55%;\n  background-size: 55%;\n}\n\n.pageHeading .ui.header > .sub.header {\n  font-size: 0.3em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n  color: #4251B0;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pageHeading {\n  padding: 3em 0;\n  background-image: url(" + __webpack_require__(4) + ");\n  background-repeat: no-repeat;\n  background-position: center 0;\n  -webkit-background-size: 55%;\n  background-size: 55%;\n}\n\n.pageHeading .ui.header > .sub.header {\n  font-size: 0.3em;\n  font-style: italic;\n  font-family: \"adelle\",serif;\n}\n", ""]);
 
   // exports
 

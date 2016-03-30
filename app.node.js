@@ -1898,7 +1898,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '60,000 Api Requests'
+                        '40,000 Api Requests'
                       )
                     ),
                     _react2['default'].createElement(
@@ -1907,7 +1907,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '1gb Image storage'
+                        '600mb Image storage'
                       )
                     ),
                     _react2['default'].createElement(
@@ -1987,7 +1987,7 @@ module.exports =
                       _react2['default'].createElement(
                         'td',
                         null,
-                        '1025 Database',
+                        '1gb Database',
                         _react2['default'].createElement('br', null),
                         'production grade'
                       )
@@ -2089,13 +2089,13 @@ module.exports =
     enterprise: 'contact'
   }, {
     feature: 'Image Storage',
-    micro: '1024 mb',
+    micro: '600 mb',
     production: '2048 mb',
     professional: '5000 mb',
     enterprise: 'contact'
   }, {
     feature: 'API Calls',
-    micro: '60,000 monthly',
+    micro: '40,000 monthly',
     production: '200,000 monthly',
     professional: '1,000,000 monthly',
     enterprise: 'contact'
@@ -3162,7 +3162,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pricing.basic {\n  padding: 4em 0;\n  background-color: #F2F2F2;\n}\n\n.pricing.basic table {\n  text-align: center;\n}\n\n.pricing.basic table thead {\n  background-color: #171F52;\n}\n\n.pricing.basic table thead tr th {\n  color: #FFFFFF;\n  font-size: 1.6em;\n  font-weight: 300;\n  padding: 0.8em 0 !important;\n  border-radius: 0 !important;\n}\n\n.pricing.basic table tbody {\n  font-family: \"adelle\",serif;\n  background-color: #FFFFFF;\n  padding-top: 1em;\n  padding-bottom: 2em;\n}\n\n.pricing.basic table tbody tr {\n  border-bottom: 0 !important;\n}\n\n.pricing.basic table tbody tr td {}\n\n.pricing.basic table tbody tr td.price {\n  font-size: 2.4em;\n  font-weight: 500;\n  font-style: italic;\n}\n\n.pricing.basic table tbody tr td.compare {\n  font-size: 1.4em;\n  text-decoration: underline;\n}\n\n.pricing.basic table tbody tr td.compare a {\n  color: #030828;\n}\n", ""]);
+  exports.push([module.id, "/*\n * Colors\n * -------------------------------------------------------------------------- */\n\n/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.pricing.basic {\n  padding: 4em 0;\n  background-color: #F2F2F2;\n}\n\n.pricing.basic table {\n  text-align: center;\n}\n\n.pricing.basic table thead {\n  background-color: #171F52;\n}\n\n.pricing.basic table thead tr th {\n  color: #FFFFFF;\n  font-size: 1.6em;\n  font-weight: 300;\n  padding: 0.8em 0 !important;\n  border-radius: 0 !important;\n}\n\n.pricing.basic table tbody {\n  font-family: \"adelle\",serif;\n  background-color: #FFFFFF;\n  padding-top: 1em;\n  padding-bottom: 2em;\n}\n\n.pricing.basic table tbody tr {\n  border-bottom: 0 !important;\n}\n\n.pricing.basic table tbody tr td {}\n\n.pricing.basic table tbody tr td.price {\n  font-size: 2.4em;\n  font-weight: 500;\n  font-style: italic;\n}\n\n.pricing.basic table tbody tr td.compare {\n  font-size: 1.4em;\n  text-decoration: underline;\n  cursor: pointer;\n}\n\n.pricing.basic table tbody tr td.compare a {\n  color: #030828;\n}\n", ""]);
 
   // exports
 

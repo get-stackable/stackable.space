@@ -7,6 +7,14 @@ class Navigation extends React.Component {
     $('.ui.dropdown.mobile').dropdown();
   }
 
+  goToHowItWorks = () => {
+    if (window.location.pathname === '/') {
+      smoothScroll.animateScroll('#how-it-works')
+    } else {
+      window.location.href = '/#how-it-works';
+    }
+  };
+
   render() {
     return (
       <div className="ui container">
@@ -15,7 +23,7 @@ class Navigation extends React.Component {
             <img className="logo" src="logo.png"/>
             stackable
           </a>
-          <a className="item desktop" href="/#how-it-works">
+          <a className="item desktop" onClick={this.goToHowItWorks}>
             How it works
           </a>
           <a className="item desktop" href="/pricing">
@@ -38,7 +46,7 @@ class Navigation extends React.Component {
           <div className="ui right inverted button dropdown item mobile">
             Menu
             <div className="menu">
-              <a className="item" href="/#how-it-works">
+              <a className="item" onClick={this.goToHowItWorks}>
                 How it works
               </a>
               <a className="item">

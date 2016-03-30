@@ -1346,7 +1346,15 @@ module.exports =
     value: true
   });
 
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
   var _react = __webpack_require__(1);
 
@@ -1362,21 +1370,57 @@ module.exports =
 
   var _TopBar2 = _interopRequireDefault(_TopBar);
 
-  function Layout(_ref) {
-    var children = _ref.children;
+  var _velocityReact = __webpack_require__(52);
 
-    return _react2['default'].createElement(
-      'div',
-      null,
-      _react2['default'].createElement(
-        'div',
-        { className: 'ui dark fluid container' },
-        _react2['default'].createElement(_TopBar2['default'], null),
-        _react2['default'].createElement(_Navigation2['default'], null)
-      ),
-      children
-    );
-  }
+  var Layout = (function (_React$Component) {
+    _inherits(Layout, _React$Component);
+
+    function Layout(props) {
+      _classCallCheck(this, Layout);
+
+      _get(Object.getPrototypeOf(Layout.prototype), 'constructor', this).call(this, props);
+
+      this.state = {
+        showSubComponent: 0
+      };
+    }
+
+    _createClass(Layout, [{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        var _this = this;
+
+        setTimeout(function () {
+          _this.setState({ showSubComponent: 1 });
+        }, 30);
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'div',
+            { className: 'ui dark fluid container' },
+            _react2['default'].createElement(_TopBar2['default'], null),
+            _react2['default'].createElement(_Navigation2['default'], null)
+          ),
+          _react2['default'].createElement(
+            _velocityReact.VelocityComponent,
+            { animation: { opacity: this.state.showSubComponent }, duration: 220 },
+            _react2['default'].createElement(
+              'div',
+              null,
+              this.state.showSubComponent === 1 ? this.props.children : ''
+            )
+          )
+        );
+      }
+    }]);
+
+    return Layout;
+  })(_react2['default'].Component);
 
   Layout.propTypes = {
     children: _react.PropTypes.element.isRequired
@@ -2169,10 +2213,10 @@ module.exports =
               _react2['default'].createElement(
                 'tbody',
                 null,
-                plans.map(function (plan) {
+                plans.map(function (plan, index) {
                   return _react2['default'].createElement(
                     'tr',
-                    null,
+                    { key: index },
                     _react2['default'].createElement(
                       'td',
                       { className: 'dotted' },
@@ -3174,6 +3218,12 @@ module.exports =
 /***/ function(module, exports) {
 
   module.exports = require("underscore");
+
+/***/ },
+/* 52 */
+/***/ function(module, exports) {
+
+  module.exports = require("velocity-react");
 
 /***/ }
 /******/ ]);

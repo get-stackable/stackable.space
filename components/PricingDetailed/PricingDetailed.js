@@ -92,9 +92,9 @@ class PricingDetailed extends React.Component {
               </tr>
             </thead>
             <tbody>
-              {plans.map((plan) => {
+              {plans.map((plan, index) => {
                 return (
-                  <tr>
+                  <tr key={index}>
                     <td className="dotted">
                       {plan.feature}
                       <i className="help circle icon" />

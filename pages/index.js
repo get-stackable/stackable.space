@@ -7,16 +7,15 @@ import Libraries from '../components/Libraries';
 import Footer from '../components/Footer';
 
 export default class extends Component {
-
   render() {
     return (
       <div>
-        <MasterHead />
-        <AboutApis />
-        <FeatureOne />
-        <FeatureTwo />
-        <Libraries />
-        <Footer />
+          <MasterHead />
+          <AboutApis />
+          <FeatureOne />
+          <FeatureTwo />
+          <Libraries />
+          <Footer />
       </div>
     );
   }

@@ -1650,6 +1650,14 @@ module.exports =
       _classCallCheck(this, Navigation);
 
       _get(Object.getPrototypeOf(Navigation.prototype), 'constructor', this).apply(this, arguments);
+
+      this.goToHowItWorks = function () {
+        if (window.location.pathname === '/') {
+          smoothScroll.animateScroll('#how-it-works');
+        } else {
+          window.location.href = '/#how-it-works';
+        }
+      };
     }
 
     _createClass(Navigation, [{
@@ -1674,7 +1682,7 @@ module.exports =
             ),
             _react2['default'].createElement(
               'a',
-              { className: 'item desktop', href: '/#how-it-works' },
+              { className: 'item desktop', onClick: this.goToHowItWorks },
               'How it works'
             ),
             _react2['default'].createElement(
@@ -1719,7 +1727,7 @@ module.exports =
                 { className: 'menu' },
                 _react2['default'].createElement(
                   'a',
-                  { className: 'item', href: '/#how-it-works' },
+                  { className: 'item', onClick: this.goToHowItWorks },
                   'How it works'
                 ),
                 _react2['default'].createElement(

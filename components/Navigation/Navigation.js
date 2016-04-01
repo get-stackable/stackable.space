@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navigation.scss';
-import Link from '../Link';
+import UiLink from '../../components/UiLink';
 
 class Navigation extends React.Component {
   componentDidMount() {
@@ -39,9 +39,9 @@ class Navigation extends React.Component {
             <a className="item" href="http://blog.stackable.space">
               Blog
             </a>
-            <a className="ui inverted button" href="http://ui.stackable.space">
+            <UiLink className="ui inverted button">
               Login
-            </a>
+            </UiLink>
           </div>
           <div className="ui right inverted button dropdown item mobile">
             Menu
@@ -61,9 +61,9 @@ class Navigation extends React.Component {
               <a className="item" href="http://blog.stackable.space">
                 Blog
               </a>
-              <a className="item" href="http://ui.stackable.space">
+              <UiLink className="item">
                 <strong>Login</strong>
-              </a>
+              </UiLink>
             </div>
           </div>
         </div>

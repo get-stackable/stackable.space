@@ -1,5 +1,6 @@
 import React from 'react';
 import './MasterHead.scss';
+import UiLink from '../../components/UiLink';
 
 function MasterHead() {
   return (
@@ -12,7 +13,7 @@ function MasterHead() {
           </div>
         </div>
         <div className="try free">
-          <a className="ui yellow button" href="http://ui.stackable.space">TRY FREE</a>
+          <UiLink className="ui yellow button">TRY FREE</UiLink>
           <p>developer plan always <span className="underline">free</span></p>
         </div>
         <img className="banner" src="master-head-banner.jpg"/>

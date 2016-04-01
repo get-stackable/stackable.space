@@ -1,5 +1,6 @@
 import React from 'react';
 import './PricingBasic.scss';
+import UiLink from '../../components/UiLink';
 
 class PricingBasic extends React.Component {
   render() {
@@ -24,24 +25,24 @@ class PricingBasic extends React.Component {
                   </tr>
                   <tr>
                     <td>
-                      <a className="ui yellow button" href="http://ui.stackable.space">Start Now</a>
+                      <UiLink className="ui yellow button">Start Now</UiLink>
                     </td>
                   </tr>
                   <tr>
                     <td>250mb Database<br />on our development servers</td>
                   </tr>
                   <tr>
-                    <td>60,000 Api Requests</td>
+                    <td>40,000 Api Requests</td>
                   </tr>
                   <tr>
-                    <td>1gb Image storage</td>
+                    <td>600mb Image storage</td>
                   </tr>
                   <tr>
                     <td>unlimited stacks</td>
                   </tr>
                   <tr>
                     <td className="compare">
-                      <a href="#detailed-table">COMPARE ALL FEATURES</a>
+                      <a onClick={() => smoothScroll.animateScroll('#detailed-table')}>COMPARE ALL FEATURES</a>
                     </td>
                   </tr>
                 </tbody>
@@ -60,11 +61,11 @@ class PricingBasic extends React.Component {
                 </tr>
                 <tr>
                   <td>
-                    <a className="ui yellow button" href="http://ui.stackable.space">Start Now</a>
+                    <UiLink className="ui yellow button">Start Now</UiLink>
                   </td>
                 </tr>
                 <tr>
-                  <td>1025 Database<br />production grade</td>
+                  <td>1gb Database<br />production grade</td>
                 </tr>
                 <tr>
                   <td>200,000 Api Requests</td>
@@ -77,7 +78,7 @@ class PricingBasic extends React.Component {
                 </tr>
                 <tr>
                   <td className="compare">
-                    <a href="#detailed-table">COMPARE ALL FEATURES</a>
+                    <a onClick={() => smoothScroll.animateScroll('#detailed-table')}>COMPARE ALL FEATURES</a>
                   </td>
                 </tr>
                 </tbody>

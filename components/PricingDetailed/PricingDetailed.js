@@ -15,13 +15,13 @@ let plans = [{
   enterprise: 'contact'
 }, {
   feature: 'Image Storage',
-  micro: '1024 mb',
+  micro: '600 mb',
   production: '2048 mb',
   professional: '5000 mb',
   enterprise: 'contact'
 }, {
   feature: 'API Calls',
-  micro: '60,000 monthly',
+  micro: '40,000 monthly',
   production: '200,000 monthly',
   professional: '1,000,000 monthly',
   enterprise: 'contact'

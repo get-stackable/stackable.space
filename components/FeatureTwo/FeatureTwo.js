@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeatureTwo.scss';
+import UiLink from '../../components/UiLink';
 
 function FeatureTwo() {
   return (
@@ -26,7 +27,7 @@ function FeatureTwo() {
             <div className="item">Advanced text editors (like medium)</div>
             <div className="item">All your relationships just work!</div>
           </div>
-          <a className="ui yellow button" href="http://ui.stackable.space">TRY FREE</a>
+          <UiLink className="ui yellow button">TRY FREE</UiLink>
         </div>
       </div>
     </div>

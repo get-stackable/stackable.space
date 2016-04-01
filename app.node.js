@@ -63,7 +63,7 @@ module.exports =
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(8);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(7);
 
   var _coreLocation = __webpack_require__(22);
 
@@ -423,6 +423,8 @@ module.exports =
 
   var _simplestorageJs2 = _interopRequireDefault(_simplestorageJs);
 
+  var _fbjsLibExecutionEnvironment = __webpack_require__(7);
+
   var UiLink = (function (_Component) {
     _inherits(UiLink, _Component);
 
@@ -437,11 +439,25 @@ module.exports =
       value: function getLink() {
         var value = _simplestorageJs2['default'].get('ref-key');
 
-        if (_underscore2['default'].isUndefined(value)) {
+        if (this.getQueryStringValue('ref') !== null) {
+          value = this.getQueryStringValue('ref');
+          return 'http://ui.stackable.space/login?ref=' + value;
+        } else if (_underscore2['default'].isUndefined(value)) {
           return 'http://ui.stackable.space';
         } else {
           return 'http://ui.stackable.space/login?ref=' + value;
         }
+      }
+    }, {
+      key: 'getQueryStringValue',
+      value: function getQueryStringValue(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)", "i"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
     }, {
       key: 'render',
@@ -451,11 +467,19 @@ module.exports =
 
         var props = _objectWithoutProperties(_props, ['children']);
 
-        return _react2['default'].createElement(
-          'a',
-          _extends({}, props, { href: this.getLink() }),
-          children
-        );
+        if (_fbjsLibExecutionEnvironment.canUseDOM) {
+          return _react2['default'].createElement(
+            'a',
+            _extends({}, props, { href: this.getLink() }),
+            children
+          );
+        } else {
+          return _react2['default'].createElement(
+            'a',
+            _extends({}, props, { href: 'http://ui.stackable.space' }),
+            children
+          );
+        }
       }
     }]);
 
@@ -600,6 +624,12 @@ module.exports =
 
 /***/ },
 /* 7 */
+/***/ function(module, exports) {
+
+  module.exports = require("fbjs/lib/ExecutionEnvironment");
+
+/***/ },
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -669,12 +699,6 @@ module.exports =
 
   exports['default'] = PageHeading;
   module.exports = exports['default'];
-
-/***/ },
-/* 8 */
-/***/ function(module, exports) {
-
-  module.exports = require("fbjs/lib/ExecutionEnvironment");
 
 /***/ },
 /* 9 */
@@ -2253,7 +2277,7 @@ module.exports =
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(8);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(7);
 
   var _historyLibCreateBrowserHistory = __webpack_require__(48);
 
@@ -2773,7 +2797,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsPageHeading = __webpack_require__(7);
+  var _componentsPageHeading = __webpack_require__(8);
 
   var _componentsPageHeading2 = _interopRequireDefault(_componentsPageHeading);
 
@@ -2940,7 +2964,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsPageHeading = __webpack_require__(7);
+  var _componentsPageHeading = __webpack_require__(8);
 
   var _componentsPageHeading2 = _interopRequireDefault(_componentsPageHeading);
 
